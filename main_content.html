@@ -20,7 +20,17 @@
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
   <style>
-
+    .ban{
+      background: lightblue;
+      border: lightskyblue 3px solid;
+      font-size: 15px;
+    }
+    .pagemove{
+      color: blue;
+    }
+    #sibal{
+      font-size: 15px;
+    }
   </style>
 
 </head>
@@ -92,30 +102,130 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-        <div id="subMenu"></div>
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="">
-            <h2 class="post-title">
-              첫번째 내용 큰제목
-            </h2>
-            <h3 class="post-subtitle">
-              첫번째 작은제목
-            </h3>
-          </a>
-
+        <div id="subMenu" style="float: left; background: yellowgreen; padding: 0.vmin;">
+          <p style="font-size: 2vmin;"><b>킹갓 서브메뉴</b></p>
+          <ul id="subM" style="font-size: 2vmin;">
+            <a href="#">aa</a><br>
+            <a href="#">bb</a><br>
+            <a href="#">cc</a><br>
+            <a href="#">dd</a><br>
+          </ul>
         </div>
-        <hr>
-        <div class="post-preview">
-          <a href="">
-            <h2 class="post-title">
-              두번째 게시글
-            </h2>
-          </a>
-
+      <div class="col-lg-8 col-md-10 mx-auto" style="float: right;">
+        <div class="post-preview">       
+            <h2 class="post-title">공지사항</h2>
+           <button class="ban 1">새싹</button>
+           <button class="ban 2">열매</button>
+           <button class="ban 3">담배</button>
+           <button class="ban 4">커피</button>
         </div>
         <hr>
 
+        <!--게시판 대가리-->
+        <table width=100% border=0 cellpadding=0 cellspacing=0 style="text-align: center;">
+          <tr>
+            <td colspan=5 height=1 class=mw_basic_line_color></td>
+          </tr>
+          <tr class=mw_basic_list_title>
+            <td width=40>번호</td>     
+            <td>제목</td>
+            <td width=95>글쓴이</td>
+            <td width=50>날짜</td>
+            <td width=40><a href=''>조회</a></td>
+          </tr>
+          <tr><td colspan=5 height=1></td></tr>
+          <tr><td colspan=5 height=3 style="background-color:#efefef;"></td></tr>
+          <tr><td colspan=5 height=3 ></td></tr>
+
+          <!--게시판 글 목록 -->
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr>
+            <td width=40>1</td>     
+            <td>나도 잘 모르겠어요</td>
+            <td width=95>임도훈</td>
+            <td width=50>2020.19.18</td>
+            <td width=40>1</td>
+          </tr>
+          <tr><td colspan=5 height=1></td></tr>
+          <tr><td colspan=5 height=3 style="background-color:#efefef;"></td></tr>
+          <tr><td colspan=5 height=3 ></td></tr>
+        </table>
+        <hr>
+
+
+<!-- 페이지이동! -->
+        
+        <table width="100%" cellspacing="0" cellpadding="0" id="sibal">
+          <tr>
+            <td>
+                <input type="text"><button>검색</button>
+            </td>
+            <td>
+              <a href="1"><span class="pagemove">1</span></a> &nbsp;&nbsp;
+              <a href='2'><span class="pagemove">2</span></a> &nbsp;&nbsp;
+              <a href='3'><span class="pagemove">3</span></a> &nbsp;&nbsp;
+              <a href='4'><span class="pagemove">4</span></a> &nbsp;&nbsp;
+              <a href='5'><span class="pagemove">5</span></a> &nbsp;&nbsp;
+              <a href='6'><span class="pagemove">6</span></a> &nbsp;&nbsp;
+              <a href='7'><span class="pagemove">7</span></a> &nbsp;&nbsp;
+              <a href='맨끝'>맨끝</a>
+            </td>
+          </tr>
+        </table>
+
+
+<!-- 게시판 목록 끝 -->
+
+
+</table>
       </div>
     </div>
   </div>
@@ -155,3 +265,4 @@
 </body>
 
 </html>
+
