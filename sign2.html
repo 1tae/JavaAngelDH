@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>요정의집 : 회원가입</title>
+	
+    <!-- <link rel="stylesheet" type="text/css" href="naversign.css"> -->
+    <link rel="stylesheet" type="text/css" href="cs1.css">
+    </head>
+<body>
+
+  <div id="wrap">
+
+<!-- header -->
+    <div id="header">
+    <span class=>자바 요정의 집</span>
+    </div>
+<!-- // header -->
+
+<form id="join_form">
+   
+    <!-- container -->
+    <div id="container">
+        <div id="content">
+        
+            
+            <div class="join_content">
+                
+                <!-- 아이디, 비밀번호 입력 -->
+                <div class="row_group">
+                    <div class="join_row">
+                        <h3 class="join_title"><label for="id">아이디</label></h3>
+                        <span class="ps_box int_id">
+							<input type="text" id="id" name="id" class="int" title="ID" maxlength="20">
+                           </span>
+                    </div>
+
+                    <div class="join_row">
+                        <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
+                        <span class="ps_box int_pass" id="pswd1Img">
+							<input type="password" id="pswd1" name="pswd1" class="int" title="비밀번호 입력"  maxlength="20">
+                            <span class="lbl"><span id="pswd1Span" class="step_txt"></span></span>
+						</span>
+                      
+
+                        <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
+                        <span class="ps_box int_pass_check" id="pswd2Img">
+							<input type="password" id="pswd2" name="pswd2" class="int" title="비밀번호 재확인 입력"  maxlength="20">
+						</span>
+                    
+                    </div>
+                </div>
+                <!-- // 아이디, 비밀번호 입력 -->
+
+                <!-- 이름 -->
+                <div class="row_group">
+                    <div class="join_row">
+                        <h3 class="join_title"><label for="name">이름</label></h3>
+                        <span class="ps_box box_right_space">
+							<input type="text" id="name" name="name" title="이름" class="int" maxlength="40">
+						</span>
+                      
+                    </div>
+                <!-- 이름 -->
+
+                <!-- 성별 -->
+                    <div class="join_row join_sex">
+                        <h3 class="join_title"><label for="gender">성별</label></h3>
+                        <div class="ps_box gender_code">
+                            <select id="gender" name="gender" class="sel" aria-label="성별">
+                                <option value="" selected="">성별</option>
+                                        <option value="M">남자</option>
+                                        <option value="F">여자</option>
+                            </select>
+                        </div>
+                    </div>
+                <!-- 성별 -->
+
+                <!-- 이메일 -->
+                    <div class="join_row join_email">
+                        <h3 class="join_title"><label for="email">본인 확인 이메일</label></h3>
+                        <span class="ps_box int_email box_right_space">
+							<input type="text" id="email" name="email" placeholder="선택입력" aria-label="선택입력" class="int" maxlength="100">
+						</span>
+                    </div>  
+                </div>
+                 <!-- 이메일 -->
+               
+
+                <!-- 휴대전화 번호, 인증번호 입력 -->
+                <div class="join_row join_mobile" id="mobDiv">
+                    <h3 class="join_title"><label for="phoneNo">휴대전화</label></h3>
+                    <div class="ps_box country_code">
+                        <select id="nationNo" name="nationNo" class="sel" aria-label="전화번호 입력">
+                             <option value="010">010</option>
+                             <option value="011">011</option>
+                             <option value="019">019</option>                                                             
+                        </select>
+                    </div>
+                    <div class="int_mobile_area">
+						<span class="ps_box int_mobile">
+							<input type="tel" id="phoneNo" name="phoneNo" placeholder="전화번호 입력" aria-label="전화번호 입력" class="int" maxlength="16">
+							<label for="phoneNo" class="lbl"></label>
+						</span>
+                        <a href="#" class="btn_verify btn_primary" id="btnSend" role="button">
+                            <span class="">인증번호 받기</span>
+                        </a>
+                    </div>
+                    <div class="ps_box_disable box_right_space" id="authNoBox">
+                        <input type="tel" id="authNo" name="authNo" placeholder="인증번호 입력하세요" aria-label="인증번호 입력하세요" class="int" disabled="" maxlength="4">
+                        <label id="wa_verify" for="authNo" class="lbl">
+                            <span class="wa_blind">인증받은 후 인증번호를 입력해야 합니다.</span>
+                            <span class="input_code" id="authNoCode" style="display:none;"></span>
+                        </label>
+                    </div>
+                </div>
+                <!--  휴대전화 번호, 인증번호 입력 -->
+                
+            
+                <div clas="address_area">
+                    <h3>
+                        <label>주소</label>
+                    </h3>
+                    <spna class="ps_box int_id"><input type="text"><button id=></button>
+                    </spna><br>
+
+                    <input type="text">
+                    <input type="text">
+
+                </div>
+               
+                <div class="btn_area">
+                    <button type="button" id="btnJoin" class="btn_type btn_primary"><span>가입하기</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // container -->
+</form>
+
+
+	<!-- footer -->
+	<div id="footer">
+		<ul>
+			<li><a href="http://policy.naver.com/rules/service.html">이용약관</a></li>
+			<li><strong><a href="http://policy.naver.com/policy/privacy.html">개인정보처리방침</a></strong></li>
+			<li><a href="http://policy.naver.com/rules/disclaimer.html">책임의 한계와 법적고지</a></li>
+			<li><a href="https://help.naver.com/support/alias/membership/p.membership/p.membership_26.naver" target="_blank">회원정보 고객센터 </a></li>
+		</ul>
+		<address>
+			<em><a href="https://www.navercorp.com/" target="_blank" class="logo"><span class="blind">naver</span></a></em>
+			<em class="copy">Copyright</em>
+			<em class="u_cri">©</em>
+			<a href="https://www.navercorp.com/" target="_blank" class="u_cra">NAVER Corp.</a>
+			<span class="all_r">All Rights Reserved.</span>
+		</address>
+	</div>
+	<!-- //footer -->
+</div>
+
+</body></html>
