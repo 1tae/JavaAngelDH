@@ -1,0 +1,52 @@
+
+.register{
+    width : 80%;    
+    background : rgb(245, 243, 243);    
+    
+    border-radius:5px;
+    overflow-x: auto;
+
+}
+
+.form{
+    position : absolute;
+    height : 35%;    
+    top:15%;
+}
+.view{
+    position : absolute;
+    top: 54%;
+    height: 37%;
+}
+
+#empty{
+    position : absolute;
+    top: 50.5%;
+    right: 5%;
+}
+
+table {
+    border-color: gray;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+    width: 100%;
+    min-width : 1000px;
+   
+}
+
+tr th{
+    text-align: center;
+    background: rgb(211, 209, 209);
+}
+
+tr td {
+    background : rgb(245, 243, 243);
+}
+
+#viewTable td{
+    text-align: center;
+}
+
+
+
