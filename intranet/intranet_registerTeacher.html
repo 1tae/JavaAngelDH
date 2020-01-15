@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://blackrockdigital.github.io/startbootstrap-sb-admin-2/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>인트라넷 교사등록</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="../intranet/intranet/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../intranet/intranet/css" rel="stylesheet">
+  <link href="../intranet/intranet/1_content.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="../intranet/intranet/sb-admin-2.min.css" rel="stylesheet">
+
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../intranet/intranet_main.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">어린이집<br> 인트라넷</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- 사이드바 -> 메인으로 가기 -->
+      <li class="nav-item active">
+        <a class="nav-link" href="../intranet/intranet_main.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>메인으로</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- 메뉴 -->
+      <div class="sidebar-heading">
+        메뉴
+      </div>
+
+      <!-- 사이드바 -> 등록 -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>등록</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">상세 메뉴</h6>
+            <a class="collapse-item" href="../intranet/intranet_main.html">원아등록</a>
+            <a class="collapse-item" href="../intranet/intranet_main.html">교사등록</a>
+            <a class="collapse-item" href="../intranet/intranet_main.html">학부모 등록</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 사이드바 -> 홈페이지 등록 -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>홈페이지 관리</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">상세페이지</h6>
+            <a class="collapse-item" href="../intranet/intranet_main.html">보육프로그램</a>
+            <a class="collapse-item" href="../intranet/intranet_main.html">앨범</a>
+            <a class="collapse-item" href="../intranet/intranet_main.html">커뮤니티</a>
+          </div>
+        </div>
+      </li>
+
+       <!-- Divider -->
+       <hr class="sidebar-divider">
+
+       <!-- Heading -->
+       <div class="sidebar-heading">
+         개인페이지
+       </div>    
+
+      <!-- 사이드바 -> 개인페이지 -->
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="../intranet/intranet_main.html">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>품의신청</span>
+            </a>
+            <a class="nav-link collapsed" href="../intranet/intranet_main.html">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>교육일지</span>
+            </a>
+            <a class="nav-link collapsed" href="../intranet/intranet_main.html">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>일정관리</span>
+            </a>
+        </li>
+
+         <!-- Divider -->
+       <hr class="sidebar-divider">
+
+       <!-- Heading -->
+       <div class="sidebar-heading">
+           정보수정
+        </div>
+
+        <!-- 사이드바 -> 로그아웃 & 개인정보수정 -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="../intranet/intranet_main.html">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>개인정보수정</span>
+            </a>
+            <a class="nav-link collapsed" href="../intranet/intranet_main.html">
+                <i class="fas fa-fw fa-wrench"></i>
+                <span>로그아웃</span>
+            </a>
+        </li>
+      
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">Show All Alerts</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">7</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="./인트라넷_files/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="./인트라넷_files/60x60(1)" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="./인트라넷_files/60x60(2)" alt="">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="./인트라넷_files/60x60(3)" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">Read More Messages</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="./인트라넷_files/60x60(4)">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-4 text-gray-800">교사 등록</h1>
+
+          <div class = "registerFormArea">
+            <div class = "register form">
+              <table class="text-gray-800" id = "studentRegForm" border = '1'>
+                <tr>
+                  <th> <label >원아명</label></th>
+                  <td colspan = "2"> &nbsp;
+                    <input type = "text" id = "studentName">
+                  </td>
+                  <th><label>성별</label></th>
+                  <td> &nbsp;
+                    <input type = "radio" id = "studentGenderM" name = "studnetGender" value = "남">
+                    <label for = "studentGenderM">남</label>
+                    <input type = "radio" id = "studentGenderF" name = "studnetGender" value = "여">
+                    <label for = "studentGenderF">여</label>
+                  </td>
+                  <th><label>학번</label></th>
+                  <td> &nbsp;<input type = "text" id = "studentNum"></td>
+                  <td colspan="2" rowspan = "4">사진</td>
+                </tr>
+                <tr>
+                  <th><label>생일</label></th>
+                  <td><input type = "date" id = "studentBDay"></td>
+                  <td>
+                    <input type = "radio" id = "studentBDayA" name = "studentBDay" value = "양">
+                    <label for = "studentBDay">양</label>
+                    <input type = "radio" id = "studentBDayB" name = "studentBDay" value = "음">
+                    <label for = "studentBDay">음</label>
+                  </td>
+                  <th><label>입학일</label></th>
+                  <td><input type = "date" id = "studentEnterance"></td>
+                  <th><label>졸업일</label></th>
+                  <td><input type = "date" id = "studentGraduation"></td>
+                </tr>
+                <tr>
+                  <th><label>주소</label></th>
+                  <td colspan="6"><input type = "text" id = "studentAddress1"></td>
+                </tr>
+                <tr>
+                  <th><label>나이(만)</label></th>
+                  <td colspan='2'><input type = "text" id = "studentAge"></td>
+                  <th><label>외국인여부</label></th>
+                  <td>
+                    <select id = "studentForignYN">
+                      <option id = "studentForignY">Y</option>
+                      <option id = "studentForignN">N</option>
+                    </select>
+                  </td>
+                  <th><label>장애여부</label></th>
+                  <td>
+                    <select id = "studentHandicapYN">
+                      <option id = "studentHandicapY">Y</option>
+                      <option id = "studentHandicapN">N</option>
+                    </select>
+                  </td>                
+                </tr>
+                <tr>
+                  <th><label>소속반</label></th>
+                  <td colspan = '2'>
+                    <input type = "radio" id = "studentClass1" name = "studentClass">
+                    <label for = "studentClass1">1반</label>
+                    <input type = "radio" id = "studentClass2" name = "studentClass">
+                    <label for = "studentClass2">2반</label>
+                    <input type = "radio" id = "studentClass3" name = "studentClass">
+                    <label for = "studentClass3">3반</label>
+                    <input type = "radio" id = "studentClass4" name = "studentClass">
+                    <label for = "studentClass4">4반</label>
+                  </td>                
+                  <th><label>상태</label></th>
+                  <td colspan="3">
+                    <select id = "studentState">
+                      <option id = "studentStateA">재학</option>
+                      <option id = "studentStateB">휴원</option>
+                      <option id = "studentStateC">졸업</option>
+                    </select>
+                  </td>
+                  <td>
+                    <button onclick="updateImg();" id = "studentImgU">사진등록</button>
+                  </td>
+                  <td>
+                    <button onclick="deleteImg();" id = "studentImgD">사진삭제</button>
+                  </td>
+                </tr>
+              </table>
+              <table class="text-gray-800" id = "perantRegForm" border = '1'>
+                <tr>
+                  <th><label>관계</label></th>
+                  <th><label>이름</label></th>
+                  <th><label>연락처1</label></th>
+                  <th><label>연락처2</label></th>
+                  <th colspan="2"><label>이메일</label></th>
+                  <th><label>가입여부</label></th>
+                  <th colspan="2"><label>메모</label></th>
+                </tr>
+                <tr>
+                  <td>
+                    <select id = "parent">
+                      <option id = "parentA">부</option>
+                      <option id = "parentB">모</option>
+                      <option id = "parentC">기타</option>
+                    </select>                  
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentName'>
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentPhone1'>
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentPhone2'>
+                  </td>
+                  <td colspan="2">
+                    <input type = "text" id = 'parentEmail'>
+                  </td>
+                  <td>
+                    <select id = "parentSign">
+                      <option id = "parentSignY">Y</option>
+                      <option id = "parentSignN">N</option>
+                    </select>
+                  </td>
+                  <td colspan="2">
+                    <input type = "text" id = 'parentMemo'>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <select id = "parent">
+                      <option id = "parentA">부</option>
+                      <option id = "parentB">모</option>
+                      <option id = "parentC">기타</option>
+                    </select>                  
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentName'>
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentPhone1'>
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentPhone2'>
+                  </td>
+                  <td colspan="2">
+                    <input type = "text" id = 'parentEmail'>
+                  </td>
+                  <td>
+                    <select id = "parentSign">
+                      <option id = "parentSignY">Y</option>
+                      <option id = "parentSignN">N</option>
+                    </select>
+                  </td>
+                  <td colspan="2">
+                    <input type = "text" id = 'parentMemo'>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <select id = "parent">
+                      <option id = "parentA">부</option>
+                      <option id = "parentB">모</option>
+                      <option id = "parentC">기타</option>
+                    </select>                  
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentName'>
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentPhone1'>
+                  </td>
+                  <td>
+                    <input type = "text" id = 'parentPhone2'>
+                  </td>
+                  <td colspan="2">
+                    <input type = "text" id = 'parentEmail'>
+                  </td>
+                  <td>
+                    <select id = "parentSign">
+                      <option id = "parentSignY">Y</option>
+                      <option id = "parentSignN">N</option>
+                    </select>
+                  </td>
+                  <td colspan="2">
+                    <input type = "text" id = 'parentMemo'>
+                  </td>
+                </tr>
+              </table>
+            </div>
+                         
+          </div>
+          <div id = "empty">
+            <button onclick="studentRegister();">등록</button>
+            <button onclick="studentModify();">수정</button> 
+            <button onclick="studentDelete();">삭제</button>
+            <button onclick="studentCancel();">취소</button>          
+          </div>
+          
+
+          <div class = "register view">
+            <table id = "viewTable">
+              <tr>
+                <th></th>
+                <th>구분</th>
+                <th>학번</th>
+                <th>원아명</th>
+                <th>성별</th>
+                <th>생일</th>
+                <th>입학일</th>
+                <th>소속반</th>
+                <th>상태</th>
+                <th>학부모번호</th>
+                <th>학부모ID</th>                
+              </tr>
+              <tr>
+                <td>
+                  <input type = "checkbox">
+                </td>
+                <td><label class = "num">1</label></td>
+                <td><label class = "outputNum">2019-001</label></td>
+                <td><label class = "outputName">홍달이</label></td>
+                <td><label class = "outputGender">남</label></td>
+                <td><label class = "outputBDay">2017-02-01</label></td>
+                <td><label class = "outputEntrance">2019-01-15</label></td>
+                <td><label class = "outputClass">1반</label></td>
+                <td><label class = "outputState">재학</label></td>
+                <td><label class = "outputPhone">01099998888</label></td>
+                <td><label class = "outputPID">dalmam</label></td>
+              </tr>
+            </table>
+          </div>
+        
+        </div>
+
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../intranet/intranet/jquery.min.js"></script>
+  <script src="../intranet/intranet/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../intranet/intranet/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../intranet/intranet/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../intranet/intranet/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../intranet/intranet/chart-area-demo.js"></script>
+  <script src="../intranet/intranet/chart-pie-demo.js"></script>
+
+
+
+
+</body></html>
