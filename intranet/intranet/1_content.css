@@ -8,21 +8,39 @@
 
 }
 
-.form{
+.student.form{
     position : absolute;
-    height : 35%;    
+    height : 31%;    
     top:15%;
 }
-.view{
+.student.view{
     position : absolute;
-    top: 54%;
-    height: 37%;
+    top: 51%;
+    height: 40%;
 }
 
-#empty{
+
+.teacher.form{
     position : absolute;
-    top: 50.5%;
-    right: 5%;
+    height : 21%;    
+    top:15%;
+}
+.teacher.view{
+    position : absolute;
+    top: 42%;
+    height: 48%;
+}
+
+.student.empty{
+    position : absolute;
+    top: 47%;
+    right: 8%;
+}
+
+.teacher.empty{
+    position : absolute;
+    top: 37%;
+    right: 8%;
 }
 
 table {
@@ -44,9 +62,12 @@ tr td {
     background : rgb(245, 243, 243);
 }
 
-#viewTable td{
+.table td{
     text-align: center;
 }
 
 
+
+ BODY, TABLE, TD {font-size:12px}
+ BODY, TABLE, TH {font-size:12px}
 
