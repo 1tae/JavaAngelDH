@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+   
+
+
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     
+ <!-- Optional theme -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <!-- 컨텐츠 머리글 -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+           <h1 class="h3 mb-0 text-gray-800">품의서</h1>
+         </div>
+    
+         <!-- Content Row -->
+        
+           <table class="table table-bordered" style="margin-top: 50px; color:#858796;">
+     
+             <tbody>
+                 <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+                     <tr >
+                         <th>품의제목: </th>
+                         <td colspan="4"><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+                       </tr>
+                       
+                       <tr>
+                         <th>사용자: </th>
+                       <td><input type="text" placeholder="사용자이름" name="subject"  class="form-control"/></td>
+                         <th>사용금액: </th>
+                       <td><input type="text" placeholder="사용금액" name="subject"  class="form-control"/></td> 
+                       </tr>
+                       <tr>
+                         <th>직급: </th>
+                         <td><input type="text" placeholder="직급" name="subject"  class="form-control"/></td>
+                         <th>사용부서: </th>
+                         <td><input type="text" placeholder="사용부서" name="subject"  class="form-control"/></td>
+    
+                       </tr>
+                       <tr>
+                         <th>날짜: </th>
+                         <td><input type="date" name="subject"  class="form-control"/></td>
+                       </tr>
+                     <tr style="height: 250px;">
+                         <th>품의내용: </th>
+                         <td colspan="3"><textarea style="height: 240px;" cols="12" placeholder="내용을 입력하세요. " name="content" class="form-control"></textarea></td>
+                     </tr>
+                     <tr>
+                         <th>첨부파일: </th>
+                         <td colspan="2"><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/></td>
+                         <td><input type="file"></td>
+                     </tr>
+                     <tr>
+                         <th>비밀번호: </th>
+                         <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
+                     </tr>
+                     <tr>
+                         <td colspan="4">
+                             <input type="button" value="등록" onclick="sendData()" class="pull-right"/>
+                             <input type="button" value="reset" class="pull-left"/>
+                             <input type="button" value="글 목록으로... " class="pull-right" onclick="javascript:location.href='list.jsp'"/>
+                             <!-- <a class="btn btn-default" onclick="sendData()"> 등록 </a>
+                             <a class="btn btn-default" type="reset"> reset </a>
+                             <a class="btn btn-default" onclick="javascript:location.href='list.jsp'">글 목록으로...</a> -->
+                         </td>
+                     </tr>
+                 </form>
+             </tbody>
+         </table>
+          
+       
+    
+           </div>
+        
+
+
+
+</body>
+</html>
+
+
