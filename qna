@@ -59,9 +59,9 @@
     	<div class="row">
       		<div class="col-lg-10 col-md-12 mx-auto">
                   <hr >
-                     <h1 class="d-flex justify-content-center">내 문의 현황</h1>
+                     <h1 class="d-flex justify-content-center" >내 문의 현황</h1>
                   <hr>
-				  <table class="table table-hover">
+				  <table class="table table-hover" style="border-bottom: 1px solid  #dee2e6;">
                       <thead>
                           <tr>
                               <th>번호</th>
@@ -81,7 +81,7 @@
                           </tr>
                       </tbody>
                   </table>
-                  <hr>
+               
                   <br><br>
                   <hr>
                   <h1 class="d-flex justify-content-center">문의 작성</h1>
@@ -113,6 +113,7 @@
       		</div>
     	</div>
   	</div>
+
 
 
 <!-- 하단 안내 -->
