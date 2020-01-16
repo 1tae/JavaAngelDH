@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+	<title>마이페이지 - 문의</title>
+  
+	<!-- V1.0 -->
+  
+	<!-- 개별페이지 CSS -->
+	<!-- 이것만 위치 맞춰주면됨 -->
+	<link href="css/clean-blog.min.css" rel="stylesheet">
+
+	<!-- 부트스트랩 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- 아이콘 레퍼런스 사이트 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+
+	
+
+
+
+  <style>
+      .tatd{
+          width: 100px;
+      }
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+	<!-- 상단 메뉴바 -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#868e96">
+    	<div class="container" style="position: relative;">
+      		<a class="navbar-brand" href="index.html">메인페이지로 가는거</a>
+    	</div>
+  	</nav>
+
+
+    <!-- 메인 컨텐츠 구역 -->
+    <br><br><br><br><br>
+  	<div class="container">
+    	<div class="row">
+      		<div class="col-lg-10 col-md-12 mx-auto">
+                  <hr >
+                     <h1 class="d-flex justify-content-center">내 문의 현황</h1>
+                  <hr>
+				  <table class="table table-hover">
+                      <thead>
+                          <tr>
+                              <th>번호</th>
+                              <th>제목</th>
+                              <th>작성자</th>
+                              <th>날짜</th>
+                              <th>조회수</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>문의 1번입니다</td>
+                              <td>작성자 본인</td>
+                              <td>2020-01-16</td>
+                              <td>0</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <hr>
+                  <br><br>
+                  <hr>
+                  <h1 class="d-flex justify-content-center">문의 작성</h1>
+                  <hr>
+                  <table class="table table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="tatd">제목: </td>
+                                    <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="tatd">내용: </td>
+                                    <td><textarea cols="10" rows="10" placeholder="내용을 입력하세요. " name="content" class="form-control "  style="resize : none;"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td class="tatd">첨부파일: </td>
+                                    <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/> <span><input type="file"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="tatd">비밀번호: </td>
+                                    <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="float-right">
+                            <input class="btn btn-link" type="button" value="등록" onclick="sendData()" class="pull-right"/>
+                    </div>
+      		</div>
+    	</div>
+  	</div>
+
+
+<!-- 하단 안내 -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                 footer 내부 내용1
+              </li>
+              <li class="list-inline-item">
+                  footer 내부 내용2
+              </li>
+              <li class="list-inline-item">
+                  footer 내부 내용3
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyleft &copy; 아무나 가져다써 2020</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+		
+</body>
+</html>
