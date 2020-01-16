@@ -327,78 +327,59 @@
           <h1 class="h3 mb-4 text-gray-800">교사 등록</h1>
 
           <div class = "registerFormArea">
-            <div class = "register form">
+            <div class = "teacher register form">
               <table class="text-gray-800" id = "studentRegForm" border = '1'>
                 <tr>
-                  <th> <label >원아명</label></th>
-                  <td colspan = "2"> &nbsp;
-                    <input type = "text" id = "studentName">
-                  </td>
-                  <th><label>성별</label></th>
+                  <th> <label >직급</label></th>
                   <td> &nbsp;
-                    <input type = "radio" id = "studentGenderM" name = "studnetGender" value = "남">
-                    <label for = "studentGenderM">남</label>
-                    <input type = "radio" id = "studentGenderF" name = "studnetGender" value = "여">
-                    <label for = "studentGenderF">여</label>
+                    <select id = teacherGrade>
+                      <option>원장</option>
+                      <option>원감</option>
+                      <option>정교사</option>
+                      <option>보조교사</option>
+                    </select> 
                   </td>
-                  <th><label>학번</label></th>
-                  <td> &nbsp;<input type = "text" id = "studentNum"></td>
-                  <td colspan="2" rowspan = "4">사진</td>
+                  <th><label>개인번호</label></th>
+                  <td> &nbsp;
+                      <input type = "text" id = "teacherNum">
+                  </td>
+                  <td colspan="2" rowspan = "5">사진</td>
                 </tr>
                 <tr>
-                  <th><label>생일</label></th>
-                  <td><input type = "date" id = "studentBDay"></td>
-                  <td>
-                    <input type = "radio" id = "studentBDayA" name = "studentBDay" value = "양">
-                    <label for = "studentBDay">양</label>
-                    <input type = "radio" id = "studentBDayB" name = "studentBDay" value = "음">
-                    <label for = "studentBDay">음</label>
-                  </td>
-                  <th><label>입학일</label></th>
-                  <td><input type = "date" id = "studentEnterance"></td>
-                  <th><label>졸업일</label></th>
-                  <td><input type = "date" id = "studentGraduation"></td>
+                  <th><label>이름</label></th>
+                  <td ><input type = "text" id = "teacherName"></td>
+                  <th><label>주민번호</label></th>
+                  <td><input type = "text" id = "teacherPNum"></td>
                 </tr>
                 <tr>
                   <th><label>주소</label></th>
-                  <td colspan="6"><input type = "text" id = "studentAddress1"></td>
+                  <td colspan="3"><input type = "text" id = "teacherAddress"></td>
                 </tr>
                 <tr>
-                  <th><label>나이(만)</label></th>
-                  <td colspan='2'><input type = "text" id = "studentAge"></td>
-                  <th><label>외국인여부</label></th>
+                  <th><label>연락처</label></th>
+                  <td><input type = "text" id = "teacherPhone"></td>                
+                  <th><label>이메일</label></th>
+                  <td><input type = "text" id = "teacherEmail"></td>            
+                </tr>
+                <tr>
+                  <th><label>입사일</label></th>
+                  <td><input type = "date" id = "teacherEnrolldate"></td>                
+                  <th><label>퇴사일</label></th>
+                  <td><input type = "date" id = "teacherResigndate"></td>                 
+                </tr>
+                <tr>             
+                  <th><label>담임반</label></th>
                   <td>
-                    <select id = "studentForignYN">
-                      <option id = "studentForignY">Y</option>
-                      <option id = "studentForignN">N</option>
-                    </select>
+                    <input type = "radio" id = "teacherClass1" name = "class">1반
+                    <input type = "radio" id = "teacherClass2" name = "class">2반
+                    <input type = "radio" id = "teacherClass3" name = "class">3반
+                    <input type = "radio" id = "teacherClass4" name = "class">4반
                   </td>
-                  <th><label>장애여부</label></th>
-                  <td>
-                    <select id = "studentHandicapYN">
-                      <option id = "studentHandicapY">Y</option>
-                      <option id = "studentHandicapN">N</option>
-                    </select>
-                  </td>                
-                </tr>
-                <tr>
-                  <th><label>소속반</label></th>
-                  <td colspan = '2'>
-                    <input type = "radio" id = "studentClass1" name = "studentClass">
-                    <label for = "studentClass1">1반</label>
-                    <input type = "radio" id = "studentClass2" name = "studentClass">
-                    <label for = "studentClass2">2반</label>
-                    <input type = "radio" id = "studentClass3" name = "studentClass">
-                    <label for = "studentClass3">3반</label>
-                    <input type = "radio" id = "studentClass4" name = "studentClass">
-                    <label for = "studentClass4">4반</label>
-                  </td>                
                   <th><label>상태</label></th>
-                  <td colspan="3">
-                    <select id = "studentState">
-                      <option id = "studentStateA">재학</option>
-                      <option id = "studentStateB">휴원</option>
-                      <option id = "studentStateC">졸업</option>
+                  <td>
+                    <select id = "teacherState">
+                      <option id = "teacherStateA">재직</option>
+                      <option id = "teacherStateB">퇴직</option>
                     </select>
                   </td>
                   <td>
@@ -408,112 +389,11 @@
                     <button onclick="deleteImg();" id = "studentImgD">사진삭제</button>
                   </td>
                 </tr>
-              </table>
-              <table class="text-gray-800" id = "perantRegForm" border = '1'>
-                <tr>
-                  <th><label>관계</label></th>
-                  <th><label>이름</label></th>
-                  <th><label>연락처1</label></th>
-                  <th><label>연락처2</label></th>
-                  <th colspan="2"><label>이메일</label></th>
-                  <th><label>가입여부</label></th>
-                  <th colspan="2"><label>메모</label></th>
-                </tr>
-                <tr>
-                  <td>
-                    <select id = "parent">
-                      <option id = "parentA">부</option>
-                      <option id = "parentB">모</option>
-                      <option id = "parentC">기타</option>
-                    </select>                  
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentName'>
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentPhone1'>
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentPhone2'>
-                  </td>
-                  <td colspan="2">
-                    <input type = "text" id = 'parentEmail'>
-                  </td>
-                  <td>
-                    <select id = "parentSign">
-                      <option id = "parentSignY">Y</option>
-                      <option id = "parentSignN">N</option>
-                    </select>
-                  </td>
-                  <td colspan="2">
-                    <input type = "text" id = 'parentMemo'>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <select id = "parent">
-                      <option id = "parentA">부</option>
-                      <option id = "parentB">모</option>
-                      <option id = "parentC">기타</option>
-                    </select>                  
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentName'>
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentPhone1'>
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentPhone2'>
-                  </td>
-                  <td colspan="2">
-                    <input type = "text" id = 'parentEmail'>
-                  </td>
-                  <td>
-                    <select id = "parentSign">
-                      <option id = "parentSignY">Y</option>
-                      <option id = "parentSignN">N</option>
-                    </select>
-                  </td>
-                  <td colspan="2">
-                    <input type = "text" id = 'parentMemo'>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <select id = "parent">
-                      <option id = "parentA">부</option>
-                      <option id = "parentB">모</option>
-                      <option id = "parentC">기타</option>
-                    </select>                  
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentName'>
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentPhone1'>
-                  </td>
-                  <td>
-                    <input type = "text" id = 'parentPhone2'>
-                  </td>
-                  <td colspan="2">
-                    <input type = "text" id = 'parentEmail'>
-                  </td>
-                  <td>
-                    <select id = "parentSign">
-                      <option id = "parentSignY">Y</option>
-                      <option id = "parentSignN">N</option>
-                    </select>
-                  </td>
-                  <td colspan="2">
-                    <input type = "text" id = 'parentMemo'>
-                  </td>
-                </tr>
-              </table>
+              </table>              
             </div>
                          
           </div>
-          <div id = "empty">
+          <div class = "teacher empty">
             <button onclick="studentRegister();">등록</button>
             <button onclick="studentModify();">수정</button> 
             <button onclick="studentDelete();">삭제</button>
@@ -521,36 +401,51 @@
           </div>
           
 
-          <div class = "register view">
-            <table id = "viewTable">
+          <div class = "teacher register view">
+            <table id = "viewable" class="table table-striped">
               <tr>
                 <th></th>
                 <th>구분</th>
-                <th>학번</th>
-                <th>원아명</th>
-                <th>성별</th>
-                <th>생일</th>
-                <th>입학일</th>
-                <th>소속반</th>
-                <th>상태</th>
-                <th>학부모번호</th>
-                <th>학부모ID</th>                
+                <th>개인번호</th>
+                <th>직급</th>
+                <th>성명</th>
+                <th>연락처</th>
+                <th>입사일</th>
+                <th>퇴사일</th>
+                <th>담임반</th>
+                <th>호봉</th>
+                <th>상태</th>                
               </tr>
               <tr>
                 <td>
                   <input type = "checkbox">
                 </td>
                 <td><label class = "num">1</label></td>
-                <td><label class = "outputNum">2019-001</label></td>
-                <td><label class = "outputName">홍달이</label></td>
-                <td><label class = "outputGender">남</label></td>
-                <td><label class = "outputBDay">2017-02-01</label></td>
-                <td><label class = "outputEntrance">2019-01-15</label></td>
-                <td><label class = "outputClass">1반</label></td>
-                <td><label class = "outputState">재학</label></td>
-                <td><label class = "outputPhone">01099998888</label></td>
-                <td><label class = "outputPID">dalmam</label></td>
+                <td><label class = "outputTNum">18-025</label></td>
+                <td><label class = "outputTGrade">정교사</label></td>
+                <td><label class = "outputTName">김선생</label></td>
+                <td><label class = "outputPPhone">01066130362</label></td>
+                <td><label class = "outputTEnroll">2018-03-01</label></td>
+                <td><label class = "outputTResing"></label></td>
+                <td><label class = "outputTClass">1반</label></td>
+                <td><label class = "outputTPay">2호봉</label></td>
+                <td><label class = "outputTState">재직</label></td>
               </tr>
+              <tr>
+                  <td>
+                    <input type = "checkbox">
+                  </td>
+                  <td><label class = "num">2</label></td>
+                  <td><label class = "outputTNum">15-004</label></td>
+                  <td><label class = "outputTGrade">정교사</label></td>
+                  <td><label class = "outputTName">박선생</label></td>
+                  <td><label class = "outputPPhone">0105557777</label></td>
+                  <td><label class = "outputTEnroll">2015-01-01</label></td>
+                  <td><label class = "outputTResing">2019-12-31</label></td>
+                  <td><label class = "outputTClass">2반</label></td>
+                  <td><label class = "outputTPay">5호봉</label></td>
+                  <td><label class = "outputTState">퇴직</label></td>
+                </tr>
             </table>
           </div>
         
