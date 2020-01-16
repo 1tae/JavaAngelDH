@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+	<title>게시글 읽기</title>
+    
+    <!-- v1.0 -->
+	<!-- 개별페이지 CSS -->
+	<!-- 이것만 위치 맞춰주면됨 -->
+	<link href="css/clean-blog.min.css" rel="stylesheet">
+
+	<!-- 부트스트랩 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- 아이콘 레퍼런스 사이트 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+
+	
+
+
+
+  <style>
+      .tatd{
+          width: 100px;
+      }
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+	<!-- 상단 메뉴바 -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#868e96">
+    	<div class="container" style="position: relative;">
+      		<a class="navbar-brand" href="index.html">메인페이지로 가는거</a>
+    	</div>
+  	</nav>
+
+
+    <!-- 메인 컨텐츠 구역 -->
+    <br><br><br><br><br>
+  	<div class="container">
+    	<div class="row">
+      		<div class="col-lg-10 col-md-12 mx-auto">
+                  <hr>
+                  <h1 class="d-flex justify-content-center">게시글읽기</h1>
+                  <hr>
+                  <table class="table table-bordered">
+                        <tbody>
+                                <tr>
+                                    <th class="tatd">제목: </th>
+                                    <td colspan="3">게시글 제목 영역입니다.</td>
+                                </tr>
+                                <tr>
+                                    <th class="tatd">작성자: </th>
+                                    <td>작성자 이름 입니다.</td>
+                                    <th class="tatd">작성날짜 : </th>
+                                    <td>2042-42-42</td>
+                                </tr>
+                                <tr>
+                                    <td class="tatd">내용: </td>
+                                    <td colspan="3">
+                                    <div style="height: 500px;">
+                                        게시글 내용 영역입니다.영역확이니ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ
+                                    </div>
+                                </td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="float-right">
+                            <input class="btn btn-link" type="button" value="수정" onclick="sendData()" class="pull-right"/>
+                            <input class="btn btn-link" type="button" value="글목록" onclick="sendData()" class="pull-right"/>
+                    </div>
+      		</div>
+    	</div>
+  	</div>
+
+
+<!-- 하단 안내 -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                 footer 내부 내용1
+              </li>
+              <li class="list-inline-item">
+                  footer 내부 내용2
+              </li>
+              <li class="list-inline-item">
+                  footer 내부 내용3
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyleft &copy; 아무나 가져다써 2020</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+		
+</body>
+</html>
