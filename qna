@@ -2,11 +2,10 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-
-	<title>마이페이지 - 문의</title>
-  
-	<!-- V1.0 -->
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	
+	<title>홈페이지 기본 뼈대</title>
+	
 	<!-- 개별페이지 CSS -->
 	<!-- 이것만 위치 맞춰주면됨 -->
 	<link href="css/clean-blog.min.css" rel="stylesheet">
@@ -43,7 +42,7 @@
 
 </head>
 
-<body>
+<body style="background: #f5f6f7;">
 
 	<!-- 상단 메뉴바 -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#868e96">
@@ -57,11 +56,11 @@
     <br><br><br><br><br>
   	<div class="container">
     	<div class="row">
-      		<div class="col-lg-10 col-md-12 mx-auto">
+      		<div class="col-lg-9 col-md-12 mx-auto">
                   <hr >
                      <h1 class="d-flex justify-content-center" >내 문의 현황</h1>
                   <hr>
-				  <table class="table table-hover" style="border-bottom: 1px solid  #dee2e6;">
+				  <table class="table table-hover" style="border-bottom: 1px solid  #dee2e6; background: white;">
                       <thead>
                           <tr>
                               <th>번호</th>
@@ -86,34 +85,36 @@
                   <hr>
                   <h1 class="d-flex justify-content-center">문의 작성</h1>
                   <hr>
-                  <table class="table table-bordered">
+                  <table class="table table-bordered" style="background: white;">
                         <tbody>
                                 <tr>
-                                    <td class="tatd">제목: </td>
+                                    <th class="tatd">제목: </th>
                                     <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
                                 </tr>
                                 <tr>
-                                    <td class="tatd">내용: </td>
+                                        <th class="tatd">비밀번호: </th>
+                                        <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
+                                    </tr>
+                                <tr>
+                                    <th class="tatd">내용: </th>
                                     <td><textarea cols="10" rows="10" placeholder="내용을 입력하세요. " name="content" class="form-control "  style="resize : none;"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <td class="tatd">첨부파일: </td>
-                                    <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/> <span><input type="file"></span></td>
+                                    <th class="tatd">첨부파일: </th>
+                                    <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/> 
+                                        <span><input type="file"></span>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td class="tatd">비밀번호: </td>
-                                    <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
-                                </tr>
+                             
                         </tbody>
                     </table>
 
                     <div class="float-right">
-                            <input class="btn btn-link" type="button" value="등록" onclick="sendData()" class="pull-right"/>
+                            <input class="btn btn-link" style="background: #002c5f; color: white;" type="button" value="문의 등록" onclick="sendData()" class="pull-right"/>
                     </div>
       		</div>
     	</div>
   	</div>
-
 
 
 <!-- 하단 안내 -->
