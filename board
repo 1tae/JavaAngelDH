@@ -3,6 +3,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	
     
     <!-- V1.0 -->
 
@@ -57,6 +59,9 @@
   	<div class="container">
     	<div class="row">
       		<div class="col-lg- col-md-10 mx-auto">
+            
+            <hr>
+            <h1 style="color : #002c5f;"><b>게시판</b></h1>
 				  <table class="table table-hover" style="background: white;">
                       <thead>
                           <tr>
@@ -89,11 +94,45 @@
                               <td>2020-01-16</td>
                               <td>220</td>
                           </tr>
+                          <tr>
+                              <td>112</td>
+                              <td>제목3번</td>
+                              <td>작성자3</td>
+                              <td>2020-01-16</td>
+                              <td>220</td>
+                          </tr>
+                          <tr>
+                              <td>112</td>
+                              <td>제목3번</td>
+                              <td>작성자3</td>
+                              <td>2020-01-16</td>
+                              <td>220</td>
+                          </tr>
+                          <tr>
+                              <td>112</td>
+                              <td>제목3번</td>
+                              <td>작성자3</td>
+                              <td>2020-01-16</td>
+                              <td>220</td>
+                          </tr>
+                          <tr>
+                              <td>112</td>
+                              <td>제목3번</td>
+                              <td>작성자3</td>
+                              <td>2020-01-16</td>
+                              <td>220</td>
+                          </tr>
+                          <tr>
+                              <td>112</td>
+                              <td>제목3번</td>
+                              <td>작성자3</td>
+                              <td>2020-01-16</td>
+                              <td>220</td>
+                          </tr>
                       </tbody>
                   </table>
                   <hr>
                   <button class="btn float-right" style="background: #002c5f; color: white;">글작성</button>
-
                   <div class="text-center d-flex justify-content-center">
                     <ul class="pagination">
 						<li class="page-item"><a class="page-link" href="#" >Previous</a></li>
