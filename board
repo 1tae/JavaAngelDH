@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -33,14 +34,15 @@
 
 
   <style>
-
-
+    .page-link{
+      background: #002c5f; color: white;
+    }
 
   </style>
 
 </head>
 
-<body>
+<body style="background: #f5f6f7;">
 
 	<!-- 상단 메뉴바 -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#868e96">
@@ -55,7 +57,7 @@
   	<div class="container">
     	<div class="row">
       		<div class="col-lg- col-md-10 mx-auto">
-				  <table class="table table-hover">
+				  <table class="table table-hover" style="background: white;">
                       <thead>
                           <tr>
                               <th>번호</th>
@@ -90,11 +92,11 @@
                       </tbody>
                   </table>
                   <hr>
-                  <button class="btn btn-link float-right" style="border: 1px solid #dee2e6;">글작성</button>
+                  <button class="btn float-right" style="background: #002c5f; color: white;">글작성</button>
 
                   <div class="text-center d-flex justify-content-center">
                     <ul class="pagination">
-						<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+						<li class="page-item"><a class="page-link" href="#" >Previous</a></li>
 						<li class="page-item"><a class="page-link" href="#">1</a></li>
 						<li class="page-item"><a class="page-link" href="#">2</a></li>
 						<li class="page-item"><a class="page-link" href="#">3</a></li>
