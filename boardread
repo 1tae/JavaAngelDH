@@ -42,7 +42,7 @@
 
 </head>
 
-<body>
+<body style="background: #f5f6f7;">
 
 	<!-- 상단 메뉴바 -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#868e96">
@@ -58,9 +58,9 @@
     	<div class="row">
       		<div class="col-lg-10 col-md-12 mx-auto">
                   <hr>
-                  <h1 class="d-flex justify-content-center">게시글읽기</h1>
+                  <h1 class="d-flex justify-content-center" >게시글읽기</h1>
                   <hr>
-                  <table class="table table-bordered">
+                  <table class="table table-bordered" style="background: white;">
                         <tbody>
                                 <tr>
                                     <th class="tatd">제목: </th>
@@ -84,8 +84,8 @@
                     </table>
 
                     <div class="float-right">
-                            <input class="btn btn-link" type="button" value="수정" onclick="sendData()" class="pull-right"/>
-                            <input class="btn btn-link" type="button" value="글목록" onclick="sendData()" class="pull-right"/>
+                            <input class="btn" style="background: #002c5f; color: white;" type="button" value="수정" onclick="sendData()" class="pull-right"/>
+                            <input class="btn" style="background: #002c5f; color: white;" type="button" value="글목록" onclick="sendData()" class="pull-right"/>
                     </div>
       		</div>
     	</div>
