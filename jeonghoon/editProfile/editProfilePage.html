@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>회원정보수정</title>
+	<!-- 아래껀 뭔지 몰라서.. -->
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
+	
+	<!--필수 css-->
+	<link rel="stylesheet" type="text/css" href="infoedit.css">
+	<!-- 회색 칸 클래스명은 memb_ips1 , 노란 칸은 mem_lalala입니다. 	 -->
+</head>
+
+<body style="word-break:keep-all">
+	
+	<div class="page_ct">
+			<p class="pathindicator">
+				<h4 class="page_tit ofH">회원정보수정</h4>
+			
+				</p>				
+					
+			<div id="data_ct" class="data_ct">
+<script type="text/javascript">
+
+function onsu_edit() {
+	if($("#NAME").val().replace(/(^\s*)|(\s*$)/g, "") == "") {
+		alert("이름을 입력해 주세요.");
+		$("#NAME").focus();
+		return false;
+	}
+
+	if(!$("#AREA_KIND1").is(":checked") && !$("#AREA_KIND2").is(":checked")) {
+		alert("지역을 선택해 주세요.");
+		$("#AREA_KIND1").focus();
+		return false;
+	}
+
+	if($("#AREA_KIND1").is(":checked") && $('#GC_IDX').val() == '') {
+		alert("행정구역을 선택해 주세요.");
+		$("#GC_IDX").focus();
+		return false;	
+	}
+
+	if($("#AREA_KIND2").is(":checked") && $('#AREA_NAME').val() == '') {
+		alert("행정구역을 입력해 주세요.");
+		$("#AREA_NAME").focus();
+		return false;	
+	}
+
+	if ($("#M_TEL1").val() != "" || $("#M_TEL2").val() != "" || $("#M_TEL3").val() != "") {
+		if ($("#M_TEL1").val().length < 2 || $("#M_TEL1").val().charAt(0) != "0" || isNaN($("#M_TEL1").val())) {
+			alert("연락처 정보를 바르게 입력해 주세요.");
+			$("#M_TEL1").focus(); return false;
+		}
+
+		if ($("#M_TEL2").val().length < 2 || isNaN($("#M_TEL2").val())) {
+			alert("연락처 정보를 바르게 입력해 주세요.");
+			$("#M_TEL2").focus(); return false;
+		}
+
+		if ($("#M_TEL3").val().length < 4 || isNaN($("#M_TEL3").val())) {
+			alert("연락처 정보를 바르게 입력해 주세요.");
+			$("#M_TEL3").focus(); return false;
+		}
+	}
+
+	
+
+/* function oncl_edit() {
+	$("#frmEdit").submit();
+} */
+
+</script>
+
+<form id="frmEdit" name="frmEdit" method="post" action="https://www.gseek.kr/memb/edit.info.editProc" target="actIframe" onsubmit="return onsu_edit();">
+	<input type="submit" tabindex="-1" style="width:1px;height:1px;position:absolute;top:-10000px;left:-10000px" aria-hidden="true">
+	<div class="memb_wrap">
+		<div class="memb_enter_info r_mh join mt30">
+			<dl>
+				<dt class="rfv">* <label for="ID">아이디</label></dt>
+				<dd><input type="text" id="ID" name="ID" maxlength="200" value="hoon9185" class="memb_ips1" disabled="disabled" style="width: 200px;"></dd>
+			</dl>
+			<dl>
+				<dt class="rfv">* <label for="PW1">비밀번호</label></dt>
+				<dd><input type="password" id="PW1" name="PW1" maxlength="200" value="" class="mem_lalala" style="width: 200px;"></dd>
+			</dl>
+			<dl>
+				<dt class="rfv">* <label for="PW2">비밀번호 재확인</label></dt>
+				<dd><input type="password" id="PW2" name="PW2" maxlength="200" value="" class="mem_lalala" style="width: 200px;"></dd>
+			</dl>
+			<dl>
+				<dt class="rfv">* <label for="NAME">이름</label></dt>
+				<dd><input type="text" id="NAME" name="NAME" value="마정훈" maxlength="20" class="memb_ips1" disabled="disabled" style="width: 200px;"></dd>
+			</dl>
+			<dl>
+				<dt class="rfv">*<span class="blind">필수요소</span> 성별</dt>
+				<dd>
+					<input type="radio" id="SEX1" name="SEX" value="M" checked="checked" class="fill big" ><label for="SEX1"><span class="radio"><span></span></span><span class="txt">남성</span></label>
+					<input type="radio" id="SEX2" name="SEX" value="F" class="fill big"><label for="SEX2"><span class="radio"><span></span></span><span class="txt">여성</span></label>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="rfv">* <label for="EMAIL">이메일</label></dt>
+				<dd><input type="email" id="EMAIL" name="EMAIL" maxlength="200" value="hoon9185" class="mem_lalala" style="width:200px;"> @ 
+				<select name="email22" id="email22" class="mem_lalala">
+					<option value="naver.com" checked="checked" class="mem_lalala">naver.com</option>
+					<option value="gmail.com" class="mem_lalala">gmail.com</option>
+					<option value="hanmail.net" class="mem_lalala">hanmail.net</option>
+					<option value="nate.com" class="mem_lalala">nate.com</option>
+					<option value="daum.net" class="mem_lalala">daum.net</option>
+					<option value="hotmail.com" class="mem_lalala">hotmail.com</option>
+					<option value="dreamwiz.com" class="mem_lalala">dreamwiz.com</option>
+					<option value="kakao.com" class="mem_lalala">kakao.com</option>
+					<option value="직접입력" class="mem_lalala">직접입력</option>
+				</select>
+			</dl>
+		</dd>
+			<dl>
+				<dt class="rfv">* <label for="PHONE">연락처</label></dt>
+				<dd>
+					<label for="M_TEL1" class="blind">연락처 첫번째 영역</label>
+					<input type="tel" id="M_TEL1" name="M_TEL1" maxlength="4" value="010" class="mem_lalala" style="width:80px;"> -
+					<label for="M_TEL2" class="blind">연락처 두번째 영역</label>
+					<input type="tel" id="M_TEL2" name="M_TEL2" maxlength="4" value="2963" class="mem_lalala" style="width:80px;"> -
+					<label for="M_TEL3" class="blind">연락처 세번째 영역</label>
+					<input type="tel" id="M_TEL3" name="M_TEL3" maxlength="4" value="1489" class="mem_lalala" style="width:80px;">&nbsp;&nbsp;
+					<a href="#" class="btn_verify btn_primary" id="btnSend" role="button">
+						<span class="">인증번호 받기</span>
+					</a>
+					<div class="ps_box_disable box_right_space" id="authNoBox">
+                        <input type="tel" id="authNo" name="authNo" placeholder="인증번호 입력하세요"  class="memb_ips1" maxlength="4" style="width: 266px;">
+                    </div>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="rfv">*<span class="blind">필수요소</span> 주소</dt>
+				<dd>
+					<input type="text" id="AREA_KIND1" name="AREA_KIND" value="" class="memb_ips1" style="width: 266px;" ><label for="AREA_KIND1"></label>
+					<a href="#" class="btn_verify btn_primary" id="btnSend" role="button">
+						<span class="">주소</span>
+					</a>
+					<div>
+					<input type="text" id="AREA_KIND2" name="AREA_KIND" value="" class="mem_lalala" style="width: 266px;"><label for="AREA_KIND2"></label>
+					</div>
+				</dd>
+			</dl>
+			<br><br><br>
+			<h3 style="text-align: center;">자녀 정보 입력</h3>
+			<br><br><br>
+			<dl>
+				<dt class="rfv">* <label for="NAME">이름</label></dt>
+				<dd><input type="text" id="NAME" name="NAME" value="마음씨" maxlength="20" class="mem_lalala" style="width: 200px;"></dd>
+			</dl>
+			<dl>
+				<dt class="rfv">*<span class="blind">필수요소</span> 생년월일</dt>
+				<dd>
+					<span class="memb_slt1">
+						<label for="BIRTH_DATE_YY" class="blind">생년월일 연도</label>
+						<select id="BIRTH_DATE_YY" name="BIRTH_DATE_YY">
+								<option value="2011">2011</option>
+								<option value="2012">2012</option>
+								<option value="2013" selected="selected">2013</option>
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+							</select>
+						<span class="ico_select"></span>
+					</span>
+					<span class="memb_slt1">
+						<label for="BIRTH_DATE_MM" class="blind">생년월일 월</label>
+						<select id="BIRTH_DATE_MM" name="BIRTH_DATE_MM">
+															<option value="01">01</option>
+																<option value="02">02</option>
+																<option value="03" selected="selected">03</option>
+																<option value="04">04</option>
+																<option value="05">05</option>
+																<option value="06">06</option>
+																<option value="07">07</option>
+																<option value="08">08</option>
+																<option value="09">09</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+															</select>
+						<span class="ico_select"></span>
+					</span>
+					<span class="memb_slt1">
+						<label for="BIRTH_DATE_DD" class="blind">생년월일 일</label>
+						<select id="BIRTH_DATE_DD" name="BIRTH_DATE_DD">
+															<option value="01">01</option>
+																<option value="02">02</option>
+																<option value="03">03</option>
+																<option value="04" selected="selected">04</option>
+																<option value="05">05</option>
+																<option value="06">06</option>
+																<option value="07">07</option>
+																<option value="08">08</option>
+																<option value="09">09</option>
+																<option value="10">10</option>
+																<option value="11">11</option>
+																<option value="12">12</option>
+																<option value="13">13</option>
+																<option value="14">14</option>
+																<option value="15">15</option>
+																<option value="16">16</option>
+																<option value="17">17</option>
+																<option value="18">18</option>
+																<option value="19">19</option>
+																<option value="20">20</option>
+																<option value="21">21</option>
+																<option value="22">22</option>
+																<option value="23">23</option>
+																<option value="24">24</option>
+																<option value="25">25</option>
+																<option value="26">26</option>
+																<option value="27">27</option>
+																<option value="28">28</option>
+																<option value="29">29</option>
+																<option value="30">30</option>
+																<option value="31">31</option>
+														</select>
+						<span class="ico_select"></span>
+					</span>
+					<div class="res_mv clB" style="height: 10px;"></div>
+					<span class="memb_slt1">
+						<label for="BIRTH_CAL" class="blind">양음력</label>
+						<select id="BIRTH_CAL" name="BIRTH_CAL">
+							<option value="S" selected="selected">양력</option>
+							<option value="L">음력</option>
+						</select>
+						<span class="ico_select"></span>
+					</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="rfv">*<span class="blind">필수요소</span> 성별</dt>
+				<dd>
+					<input type="radio" id="SEX3" name="GENDER" value="M" checked="checked" class="fill big" ><label for="SEX3"><span class="radio"><span></span></span><span class="txt">남아</span></label>
+					<input type="radio" id="SEX4" name="GENDER" value="F" class="fill big"><label for="SEX4"><span class="radio"><span></span></span><span class="txt">여아</span></label>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="rfv">*<span class="blind">필수요소</span> 반</dt>
+				<dd>
+					<input type="radio" id="BAN1" name="BAN" value="TREE" class="fill big" ><label for="BAN1"><span class="radio"><span></span></span><span class="txt">꿈나무반</span></label>
+					<input type="radio" id="BAN2" name="BAN" value="SAESSAK" class="fill big"><label for="BAN2"><span class="radio"><span></span></span><span class="txt">새싹반</span></label>
+					<input type="radio" id="BAN3" name="BAN" value="ZINGER" checked="checked" class="fill big"><label for="BAN3"><span class="radio"><span></span></span><span class="txt">오징어반</span></label>
+					<input type="radio" id="BAN4" name="BAN" value="GORAE" class="fill big"><label for="BAN4"><span class="radio"><span></span></span><span class="txt">고래반</span></label>
+				</dd>
+			</dl>
+		</div>
+
+		<script type="text/javascript" language="javascript" src="./GSEEK - 회원 _ 회원정보변경_files/iscroll-lite.js.다운로드"></script>
+
+<script type="text/javascript">
+
+<style>
+body {
+	/* On modern browsers, prevent the whole page to bounce */
+	/* overflow: hidden; */
+}
+
+#wrapper {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	/* overflow: hidden; */
+
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller {
+	position: absolute;
+
+	/* Prevent elements to be highlighted on tap */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	/* Put the scroller into the HW Compositing layer right from the start */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+</style>
+
+<div id="div_Profile" class="pt_modal" style="width:400px;height:470px;display:none;">
+	<div class="top">
+		<p class="tit">이동 및 크기 조절</p>
+	</div>
+	<div class="ct">
+		<div class="edit_profile_img">
+			<!-- 
+			.crop_circle의 위치가 자를 곳
+			-->
+			<div class="zoom">
+				<a href="javascript:oncl_ZOOM(&#39;minus&#39;);"><span class="blind">이미지 축소</span><span class="ico_minus1"></span></a>
+				<span id="span_zoom" class="percent">100%</span>
+				<a href="javascript:oncl_ZOOM(&#39;plus&#39;);"><span class="blind">이미지 확대</span><span class="ico_plus1"></span></a>
+			</div>
+			<div class="img_crop_wrap1">
+				<div class="img_crop_wrap2">
+					<div class="img_crop_wrap3">
+						<div class="img_area1">
+							<div class="img_area2">
+								<div id="wrapper" style="background:#ffffff;">
+									<div id="scroller">
+										<img id="img_crop" src="./GSEEK - 회원 _ 회원정보변경_files/sample_profile_200x200.png" alt="" style="max-width:none;">
+									</div>
+								</div>
+								<div class="line_t"></div>
+								<div class="line_l"></div>
+								<div class="line_r"></div>
+								<div class="line_b"></div>
+							</div>
+							<div class="top_shadow"></div>
+							<div class="left_shadow"></div>
+							<div class="right_shadow"></div>
+							<div class="btm_shadow"></div>
+						</div>
+						<div class="crop_circle_wrap" style="display:none;">
+							<div class="crop_circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt5" style="text-align:center;">
+				<div class="add_file" style="max-width:200px;margin:0 auto;">
+					<input type="hidden" id="I_FT_RNDCODE" name="I_FT_RNDCODE" value="5e22b2e775e3f">
+					<input type="hidden" id="I_FL_DEL" name="I_FL_DEL" value="">
+					<span class="plus" style="border-radius:3px 0 0 3px">&nbsp;<label for="I_FL_FILE" class="blind">프로필 이미지 파일 업로드</label><input type="file" id="I_FL_FILE" name="I_FL_FILE" class="ips3 fl1"></span>
+					<div id="I_FILEOUTER" class="file">
+						<div id="I_FILEPATH"><p>파일 끌어놓기</p></div>
+					</div>
+				</div>
+
+							</div>
+			<div class="memb_btn_wrap autowrap mt20">
+				<a href="javascript:oncl_SAVE();" class="memb_btn1 mid" style="max-width:100px;">저장</a>
+				<a href="javascript:oncl_CLOSE();" class="memb_btn2 mid" style="max-width:100px;">취소</a>
+			</div>
+		</div>
+	</div>
+	<a href="javascript:oncl_CLOSE();" class="cls pc_memb_bg"><span class="blind">팝업창 닫기</span><span class="ico_x"></span></a>
+</div>
+
+<script type="text/javascript">
+//<[CDATA[
+$(document).ready(function() {
+	$('#I_FT_RNDCODE').val(uniqid());
+	var fopts = {
+		outer: $('#I_FILEOUTER'), 
+		id: $('#I_FL_FILE'), 
+		info: $('#I_FILEPATH'), 
+		rndcode: $('#I_FT_RNDCODE').val().split('|')[0], 
+		el: $('#I_FL_FILE').get(0).files, 
+		multi: false, 
+		size: 10485760, 
+		total_size: 10485760
+	}
+	file.init(fopts);
+});
+
+function oncl_FL_DEL(opts) {
+	var v = isNumber(opts.v);
+	if (v <= 0) return;
+	
+	var $del = $("#I_FL_DEL");
+	$del.val((($del.val() == "") ? "" : ($del.val() + "|")) + v);
+
+	var $file_lst = $('#I_file_lst');
+	$("[data-id='"+v+"']").fadeOut('fast', function() {
+		$(this).remove();
+		
+		if ($file_lst.find('[data-role="lst"]').size() <= 0) {
+			$file_lst.hide();
+		}
+	});
+
+	FR_TBNAME = "";
+	FR_TBPK = "";
+	oriWidth = "";
+	oriHeight = "";
+
+	$("#img_profile").attr("src", "../imgs/ico/sample_profile_200x200.png");
+	$("#a_profile").attr('href', 'javascript:oncl_CROP(\'\', \'\', \'\', \'\', \'\', \'200\', \'200\', \'img_profile\');');
+	$("#img_crop").attr("src", "../imgs/ico/sample_profile_200x200.png");
+	$(".zoom").hide();
+
+	oncl_CROP('', '', '', '', '', '200', '200', 'img_profile');
+}
+
+/* function file_return(val1, val2, json) {
+	if(val1 == "add") {
+		if(json.success) {
+			if(json.items) {
+				var FT_CODE = json.items[0].FT_CODE;
+				var FT_X = json.items[0].FT_X;
+				var FT_Y = json.items[0].FT_Y;
+
+				/*
+				var s = "0x0";
+
+				if(myMode == "width") {
+					s = thumbWidth + "x0";
+				} else if(myMode == "height") {
+					s = "0x" + thumbHeight;
+				}
+
+				$("#img_crop").attr("src", "../lib/fileTempDown?c=" + FT_CODE + "&s=" + s);
+				*/
+
+				$("#img_profile").attr("src", "../lib/fileTempDown?c=" + FT_CODE + "&s=200x200");
+				$("#a_profile").attr('href', 'javascript:oncl_CROP(\'IDLIST\', \'FILETEMP\', \'' + FT_CODE + '\', \'' + FT_X + '\', \'' + FT_Y + '\', \'' + thumbWidth + '\', \'' + thumbHeight + '\', \'' + img_preview + '\');');
+
+				oncl_CROP('IDLIST', 'FILETEMP', FT_CODE, FT_X, FT_Y, thumbWidth, thumbHeight, img_preview);
+			}
+		}
+	} else if(val1 == "del") {
+					var bool = false;
+			
+		if(bool && $("#I_FL_DEL").val() == "") {
+			$("#img_profile").attr("src", "../lib/fileetc?c=&s=200x200");
+			$("#a_profile").attr('href', 'javascript:oncl_CROP(\'IDLIST\', \'FILEETC\', \'\', \'\', \'\', \'200\', \'200\', \'img_profile\');');
+
+			oncl_CROP('IDLIST', 'FILEETC', '', '', '', '200', '200', 'img_profile');
+		} else {
+			FR_TBNAME = "";
+			FR_TBPK = "";
+			oriWidth = "";
+			oriHeight = "";
+
+			$("#img_profile").attr("src", "../imgs/ico/sample_profile_200x200.png");
+			$("#a_profile").attr('href', 'javascript:oncl_CROP(\'\', \'\', \'\', \'\', \'\', \'200\', \'200\', \'img_profile\');');
+			$("#img_crop").attr("src", "../imgs/ico/sample_profile_200x200.png");
+			$(".zoom").hide();
+
+			oncl_CROP('', '', '', '', '', '200', '200', 'img_profile');
+		}
+	}
+}
+//]]>
+</script>
+		<div class="memb_btn_wrap autowrap mt50">
+			<a href="javascript:oncl_edit();" class="memb_btn1 mid">저장</a>
+			<a href="https://www.gseek.kr/memb/edit.info.pwcheck" class="memb_btn2 mid">취소</a>
+		</div>
+	</div>
+	
+</form>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>
