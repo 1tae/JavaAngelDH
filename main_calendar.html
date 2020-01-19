@@ -206,9 +206,9 @@
             $("#cal_top_year").text(year);
             $("#cal_top_month").text(month);
             for(var i=firstDay.getDay();i<firstDay.getDay()+lastDay.getDate();i++){
-                if(dayCount%7==1){
+                if(i%7==1){
                     $tdDay.eq(i).text(++dayCount+lol[i%8]);
-                }else if(dayCount%7==5){
+                }else if(i%7==4){
                     $tdDay.eq(i).text(++dayCount+lol[i%8]);
                 }else{
                     $tdDay.eq(i).text(++dayCount);
