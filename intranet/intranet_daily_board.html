@@ -8,16 +8,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>인트라넷_기본</title>
+  <title>인트라넷</title>
 
   <!-- Custom fonts for this template-->
   <link href="./intranet/all.min.css" rel="stylesheet" type="text/css">
-  <link href="./intranet/css" rel="stylesheet">
-  <link href="./intranet/1_content" rel="stylesheet">
+  <link href="./intranet/css.css" rel="stylesheet">
+  <link href="./intranet/1_content.css" rel="stylesheet">
   
 
   <!-- Custom styles for this template-->
   <link href="./intranet/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -32,7 +33,7 @@
       <!-- Sidebar - 로고 -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../intranet/intranet_main.html">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fa fa-smile"></i>
         </div>
         <div class="sidebar-brand-text mx-3">어린이집<br>인트라넷</div>
       </a>
@@ -43,7 +44,7 @@
       <!-- Nav Item - 메인으로 -->
       <li class="nav-item">
         <a class="nav-link" href="../intranet/intranet_main.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fa fa-home fa-2x"></i>
           <span>메인으로</span></a>
       </li>
 
@@ -55,10 +56,10 @@
         메뉴
       </div>
 
-       <!-- Nav Item - Pages Collapse Menu -->
-       <li class="nav-item">
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
         <a class="nav-link collapsed" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" data-toggle="collapse" data-target="#collapseRegister" aria-expanded="true" aria-controls="collapseRegister">
-          <i class="fas fa-fw fa-cog"></i>
+          <i class="fa fa-address-book fa-2x"></i>
           <span>등록</span>
         </a>
         <div id="collapseRegister" class="collapse" aria-labelledby="headingRegister" data-parent="#accordionSidebar">
@@ -66,7 +67,7 @@
             <h6 class="collapse-header">상세 메뉴</h6>
             <a class="collapse-item" href="../intranet/intranet_registerStudent.html">원아등록</a>
             <a class="collapse-item" href="../intranet/intranet_registerTeacher.html">교사등록</a>
-            <a class="collapse-item" href="#">회원 관리</a>
+            <a class="collapse-item" href="../intranet/intranet_member.html">회원 관리</a>
           </div>
         </div>
       </li>
@@ -74,15 +75,15 @@
       <!-- Nav Item - 홈페이지 관리 -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" data-toggle="collapse" data-target="#collapseHomepage" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
+          <i class="fa fa-desktop fa-2x"></i>
           <span>홈페이지 관리</span>
         </a>
         <div id="collapseHomepage" class="collapse" aria-labelledby="headingHomepage" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">상세 메뉴</h6>
-            <a class="collapse-item" href="#">보육프로그램</a>
-            <a class="collapse-item" href="../intranet/intranet_album_all.html">앨범</a>
-            <a class="collapse-item" href="../intranet/intranet_community_notice.html">커뮤니티</a>            
+            <a class="collapse-item" href="../intranet/intranet_program_project.html">보육프로그램</a>
+            <a class="collapse-item" href="../intranet/intranet_album_board.html">앨범</a>
+            <a class="collapse-item" href="../intranet/intranet_community_board.html">커뮤니티</a>            
           </div>
         </div>
       </li>
@@ -98,14 +99,14 @@
       <!-- Nav Item - 품의 관리 -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" aria-controls="collapseForm">
-          <i class="fas fa-fw fa-wrench"></i>
+          <i class="fa fa-file-alt fa-2x"></i>
           <span>품의관리</span>
         </a>
         <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">상세 메뉴</h6>
             <a class="collapse-item" href="../intranet/intranet_pup.html">품의 신청</a>
-            <a class="collapse-item" href="#">품의 확인</a>            
+            <a class="collapse-item" href="../intranet/intranet_pupCheck.html">품의 확인</a>            
           </div>
         </div>
       </li>
@@ -113,23 +114,23 @@
       <!-- Nav Item - 반 관리 -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" data-toggle="collapse" data-target="#collapseClass" aria-expanded="true" aria-controls="collapseClass">
-          <i class="fas fa-fw fa-wrench"></i>
+          <i class="fa fa-smile fa-2x"></i>
           <span>반관리</span>
         </a>
         <div id="collapseClass" class="collapse" aria-labelledby="headingClass" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">상세 메뉴</h6>
-            <a class="collapse-item" href="#">교육일지</a>
-            <a class="collapse-item" href="#">아이 상태 확인</a>            
-            <a class="collapse-item" href="#">상담확인</a>            
+            <a class="collapse-item" href="../intranet/intranet_daily_board.html">교육일지</a>
+            <a class="collapse-item" href="../intranet/intranet_notice.html">알림장 확인</a>            
+            <a class="collapse-item" href="../intranet/intranet_advice_board.html">상담확인</a>            
           </div>
         </div>
       </li>
 
       <!-- Nav Item - 일정관리 -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-table"></i>
+        <a class="nav-link" href="../intranet/intranet_calender.html">
+          <i class="fa fa-calendar-alt fa-2x"></i>
           <span>일정관리</span></a>
       </li>
 
@@ -143,25 +144,19 @@
 
        <!-- Nav Item - 개인정보수정 -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-table"></i>
+        <a class="nav-link" href="../intranet/intranet_edit.html">
+          <i class="fa fa-user fa-2x"></i>
           <span>개인정보수정</span></a>
       </li>
 
       <!-- Nav Item - 로그아웃 -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-table"></i>
+        <a class="nav-link" href="../intranet/intranet_logout.html">
+          <i class="fa fa-sign-out fa-2x"></i>
           <span>로그아웃</span></a>
       </li>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) 사이드바 접기-->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle">접기</button>
-      </div>
+     
 
     </ul>
     <!-- End of Sidebar -->
@@ -177,7 +172,7 @@
 
           <!-- Sidebar Toggle (Topbar) 사이드바 숨기기-->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars">숨기기</i>
+            <i class="fa fa-angle-double-left fa-2x"></i>
           </button>
 
           <!-- Topbar Navbar -->
@@ -198,66 +193,66 @@
               </div>
             </li>
 
-            <!-- Nav Item - Alerts -->
+            <!-- Nav Item - 아이상태알림 -->
             <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
+                <i class="fa fa-child fa-2x"></i>
                 <!-- Counter - Alerts -->
                 <span class="badge badge-danger badge-counter">3+</span>
               </a>
               <!-- Dropdown - Alerts -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
-                  Alerts Center
+                  아이 상태 알림
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
                   <div class="mr-3">
                     <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
+                      <i class="fa fa-child fa-2x text-white"></i>
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                    <div class="small text-gray-500">2020-01-20</div>
+                    <span class="font-weight-bold">김아가 : 감기</span>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
                   <div class="mr-3">
                     <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
+                      <i class="fa fa-child fa-2x text-white"></i>
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
+                    <div class="small text-gray-500">2020-01-20</div>
+                    홍달이 : 식후 감기약 복용
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
                   <div class="mr-3">
                     <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
+                      <i class="fa fa-child fa-2x text-white"></i>
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
+                    <div class="small text-gray-500">2020-01-19</div>
+                    박응애 : 가정 내 체험학습으로 결석합니다
                   </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">Show All Alerts</a>
+                <a class="dropdown-item text-center small text-gray-500" href="../intranet/intranet_notice.html">더보기</a>
               </div>
             </li>
 
-            <!-- Nav Item - Messages -->
+            <!-- Nav Item - 품의 알림 -->
             <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-envelope fa-fw"></i>
+                <i class="fa fa-paperclip fa-2x"></i>
                 <!-- Counter - Messages -->
-                <span class="badge badge-danger badge-counter">7</span>
+                <span class="badge badge-danger badge-counter">3</span>
               </a>
               <!-- Dropdown - Messages -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                 <h6 class="dropdown-header">
-                  Message Center
+                  결재 상태
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
                   <div class="dropdown-list-image mr-3">
@@ -265,8 +260,8 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    <div class="text-truncate">교육일지 확인바랍니다.</div>
+                    <div class="small text-gray-500">박원장, 2020-01-20, 결재신청</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
@@ -275,8 +270,8 @@
                     <div class="status-indicator"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                    <div class="text-truncate">휴가 신청 품의서입니다.</div>
+                    <div class="small text-gray-500">김선생, 2020-01-06, 반려</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
@@ -285,53 +280,44 @@
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    <div class="text-truncate">2019년 12월 지출결의서입니다.</div>
+                    <div class="small text-gray-500">김선생, 2019-12-30, 결재완료</div>
                   </div>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="./intranet/60x60(3)" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                  </div>
+                
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">Read More Messages</a>
+                <a class="dropdown-item text-center small text-gray-500" href="../intranet/intranet_pupCheck.html">더보기</a>
               </div>
             </li>
 
             <div class="topbar-divider d-none d-sm-block"></div>
 
-            <!-- Nav Item - User Information -->
+            <!-- Nav Item - 선생님 사진 -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="./intranet/60x60(4)">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">차은우 선생님</span>
+                <img class="img-profile rounded-circle" src="../intranet/image/woo.png">
               </a>
-              <!-- Dropdown - User Information -->
+
+              <!-- Dropdown - 선생님 인포메이션 -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
+                <a class="dropdown-item">
+                  <i>이름 : </i>
+                  <i name = "tName">차은우</i>
                 </a>
-                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
+                <a class="dropdown-item">
+                  <i>담당반 : </i>
+                  <i name = "className">1반</i>
+                </a>                
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                <a class="dropdown-item" href="../intranet/intranet_logout" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fa fa-sign-out text-gray-400"></i>
+                  로그아웃
                 </a>
               </div>
             </li>
+
+          </ul>
 
           </ul>
 
@@ -342,11 +328,120 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+          <h1 class="h3 mb-4 text-gray-800">교육일지</h1>
 
+          <a class="btn btn-primary btn-sm" href="../intranet/intranet_daily_write.html">글쓰기</a>
+          <button type="button" class="btn btn-primary btn-sm float-right">삭제</button>
+          <button type="button" class="btn btn-primary btn-sm float-right">수정</button>
+          
+          <table class = table>
+            <tr>
+              <th></th>
+              <th>구분</th>
+              <th>반</th>
+              <th>제목</th>
+              <th>날짜</th>
+              <th>작성자</th>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+            <tr>
+              <td><input type ="checkbox"> </td>
+              <td name = "num">1</td>
+              <td name = "class">1반</td>
+              <td name = "title">2020년 1월 20일 교육일지</td>
+              <td name = "date">2020-01-20</td>
+              <td name = "writer">김선생</td>
+            </tr>
+          </table>
+
+          <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>  
+          </div>      
+        
+        </div>
           
 
-        </div>
         <!-- /.container-fluid -->
 
       </div>
