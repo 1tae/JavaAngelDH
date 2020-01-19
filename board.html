@@ -132,7 +132,7 @@
                       </tbody>
                   </table>
                   <hr>
-                  <button class="btn float-right" style="background: #002c5f; color: white;">글작성</button>
+                  <button class="btn float-right" style="background: #002c5f; color: white;" onclick="location='boardwrite.html'">글작성</button>
                   <div class="text-center d-flex justify-content-center">
                     <ul class="pagination">
 						<li class="page-item"><a class="page-link" href="#" >Previous</a></li>
@@ -171,6 +171,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      $('tr').click(function(){
+        location='boardread.html';
+      });
+    </script>
 		
 </body>
 </html>
