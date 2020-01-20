@@ -182,7 +182,7 @@
             var setTableHTML = "";
             setTableHTML+='<table class="calendar">';
             setTableHTML+='<tr><th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th></tr>';
-            for(var i=0;i<6;i++){
+
                 setTableHTML+='<tr height="100">';
                 for(var j=0;j<7;j++){
                     setTableHTML+='<td style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap">';
@@ -191,7 +191,7 @@
                     setTableHTML+='</td>';
                 }
                 setTableHTML+='</tr>';
-            }
+            
             setTableHTML+='</table>';
             $("#cal_tab").html(setTableHTML);
         }
