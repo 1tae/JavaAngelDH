@@ -12,8 +12,8 @@
 
   <!-- Custom fonts for this template-->
   <link href="./intranet/all.min.css" rel="stylesheet" type="text/css">
-  <link href="./intranet/css" rel="stylesheet">
-  <link href="./intranet/1_content" rel="stylesheet">
+  <link href="./intranet/css.css" rel="stylesheet">
+  <link href="./intranet/1_content.css" rel="stylesheet">
   
 
   <!-- Custom styles for this template-->
@@ -151,7 +151,7 @@
 
       <!-- Nav Item - 로그아웃 -->
       <li class="nav-item">
-        <a class="nav-link" href="../intranet/intranet_logout.html">
+        <a class="nav-link" href="../intranet/intranet_logout.html" data-toggle="modal" data-target="#logoutModal">
           <i class="fa fa-sign-out fa-2x"></i>
           <span>로그아웃</span></a>
       </li>
@@ -205,7 +205,7 @@
                 <h6 class="dropdown-header">
                   아이 상태 알림
                 </h6>
-                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
+                <a class="dropdown-item d-flex align-items-center" href="../intranet/intranet_notice_read3.html">
                   <div class="mr-3">
                     <div class="icon-circle bg-primary">
                       <i class="fa fa-child fa-2x text-white"></i>
@@ -213,10 +213,10 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">2020-01-20</div>
-                    <span class="font-weight-bold">김아가 : 감기</span>
+                    <span class="font-weight-bold">홍달이 : 오늘 할머니가 데리러갈거에요</span>
                   </div>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
+                <a class="dropdown-item d-flex align-items-center" href="../intranet/intranet_notice_read2.html">
                   <div class="mr-3">
                     <div class="icon-circle bg-success">
                       <i class="fa fa-child fa-2x text-white"></i>
@@ -224,10 +224,10 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">2020-01-20</div>
-                    홍달이 : 식후 감기약 복용
+                    박응애 : 감기약 같이 보냅니다
                   </div>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
+                <a class="dropdown-item d-flex align-items-center" href="../intranet/intranet_notice_read1.html">
                   <div class="mr-3">
                     <div class="icon-circle bg-warning">
                       <i class="fa fa-child fa-2x text-white"></i>
@@ -235,7 +235,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">2020-01-19</div>
-                    박응애 : 가정 내 체험학습으로 결석합니다
+                    박응애 : 박응애 알림장입니다
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="../intranet/intranet_notice.html">더보기</a>
@@ -254,34 +254,34 @@
                 <h6 class="dropdown-header">
                   결재 상태
                 </h6>
-                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
+                <a class="dropdown-item d-flex align-items-center" href="../intranet/intranet_pupCheck.html">
                   <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="./intranet/60x60" alt="">
+                    <img class="rounded-circle" src="../intranet/image/a.png" alt="">
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
                     <div class="text-truncate">교육일지 확인바랍니다.</div>
-                    <div class="small text-gray-500">박원장, 2020-01-20, 결재신청</div>
+                    <div class="small text-gray-500">한원장, 2020-01-20, 결재신청</div>
                   </div>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
+                <a class="dropdown-item d-flex align-items-center" href="../intranet/intranet_pupCheck.html">
                   <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="./intranet/60x60(1)" alt="">
-                    <div class="status-indicator"></div>
+                    <img class="rounded-circle" src="../intranet/image/woo.png" alt="">
+                    <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
                     <div class="text-truncate">휴가 신청 품의서입니다.</div>
-                    <div class="small text-gray-500">김선생, 2020-01-06, 반려</div>
+                    <div class="small text-gray-500">차은우, 2020-01-06, 반려</div>
                   </div>
                 </a>
-                <a class="dropdown-item d-flex align-items-center" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#">
+                <a class="dropdown-item d-flex align-items-center" href="../intranet/intranet_pupCheck.html">
                   <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="./intranet/60x60(2)" alt="">
+                    <img class="rounded-circle" src="../intranet/image/woo.png" alt="">
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
                     <div class="text-truncate">2019년 12월 지출결의서입니다.</div>
-                    <div class="small text-gray-500">김선생, 2019-12-30, 결재완료</div>
+                    <div class="small text-gray-500">차은우, 2019-12-30, 결재완료</div>
                   </div>
                 </a>
                 
@@ -337,7 +337,7 @@
               <th>반</th>
               <th>아이이름</th>
               <th>제목</th>
-              <th>날짜</th>
+              <th>상담 날짜</th>
               <th>작성자</th>
             </tr>
             <tr>
@@ -346,7 +346,7 @@
               <td name = "class">1반</td>
               <td name = "studentName">홍달이</td>
               <td name = "title">상담신청합니다</td>
-              <td name = "date">2020-01-20</td>
+              <td name = "date">2020-01-30</td>
               <td name = "writer">dalmom</td>
             </tr>
             
@@ -390,8 +390,8 @@
       </div>
       <!-- End of Main Content -->
 
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
+       <!-- Footer -->
+       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright © Your Website 2019</span>
@@ -407,7 +407,7 @@
   <!-- End of Page Wrapper -->
 
   <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html#page-top">
+  <a class="scroll-to-top rounded" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
 
@@ -416,15 +416,15 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">로그아웃 하시겠습니까?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">로그아웃 버튼을 누르면 로그인페이지로 이동합니다.</div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="https://blackrockdigital.github.io/startbootstrap-sb-admin-2/login.html">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">취소</button>
+          <a class="btn btn-primary" href="../intranet/intranet_logout.html">로그아웃</a>
         </div>
       </div>
     </div>
