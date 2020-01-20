@@ -328,17 +328,19 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">알림장 확인</h1>
+          <h1 class="h3 mb-4 text-gray-800">투약의뢰서 확인</h1>
           
           <table class= "table">
             <tr>
               <th>카테고리</th>
-              <td>
-                <label id = "category">알림장</label>
+              <td colspan="3">
+                <label id = "category">투약의뢰서</label>
               </td>
+            </tr>
+            <tr>
               <th>제목</th>
               <td colspan="3">
-                <label id = "title">박응애 알림장입니다</label>
+                <label id = "title">박응애 감기약 같이 보냅니다</label>
               </td>
             </tr>
             <tr>
@@ -349,66 +351,53 @@
               <th>아이 이름</th>
                 <td>
                   <label id = "name">박응애</label>
-                </td>
+                </td>              
+            </tr>            
+            <tr>
               <th>날짜</th>
-                <td>
-                  <label id = "date">2020-01-20</label>
-                </td>
+              <td>
+                <label id = "date">2020-01-20</label>
+              </td>
+              <th>증상</th>
+              <td>
+                  <label>기침 감기</label>
+              </td>
             </tr>
             <tr>
-              <th>내용</th>
+              <th>약의 종류</th>
+              <td>
+                  <label>가루약, 물약</label>
+              </td>
+              <th>투약 용량</th>
+              <td>
+                  <label>가루약 한봉, 물약 5cc</label>
+              </td>
+            </tr>
+            <tr>
+              <th>투약 횟수</th>
+              <td>
+                  <label>1회</label>
+              </td>
+              <th>투약 시간</th>
+              <td>
+                  <label>식후 30분</label>
+              </td>
+            </tr>
+            <tr>
+              <th>보관 방법</th>
+              <td colspan="3">
+                  <label>실온</label>
+              </td>
+            </tr>
+            <tr>
+              <th>특이사항</th>
               <td colspan="5">
-                <label id = "content">밤에 잠을 못잤어요<br><br><br><br></label>
-              </td>
-            </tr>
-            <tr>
-              <th>기분</th>
-              <td colspan="2">
-                <input type = "radio" id="condition_1" name = "condition" checked="true;">
-                <label for = "condition_1">좋음</label>
-                <input type = "radio" id="condition_2" name = "condition" disabled>
-                <label for = "condition_2">보통</label>
-                <input type = "radio" id="condition_3" name = "condition" disabled>
-                <label for = "condition_3">나쁨</label>
-              </td>
-              <th>건강</th>
-              <td colspan="2">
-                <input type = "radio" id="health_1" name = "health" disabled>
-                <label for = "health_1">좋음</label>
-                <input type = "radio" id="health_2" name = "health" checked="true;">
-                <label for = "health_2">보통</label>
-                <input type = "radio" id="health_3" name = "health" disabled>
-                <label for = "health_3">나쁨</label>
-              </td>
-            </tr>
-            <tr>
-              <th>체온체크</th>
-              <td colspan="2">
-                <input type = "radio" id="tem_1" name = "tem" checked="true;">
-                <label for = "tem_1">정상</label>
-                <input type = "radio" id="tem_2" name = "tem" disabled>
-                <label for = "tem_2">미열</label>
-                <input type = "radio" id="tem_3" name = "tem" disabled>
-                <label for = "tem_3">고열</label>
-              </td>
-            </tr>
-            <tr>
-              <th>식사여부</th>
-              <td>
-                <label name="eat">먹음</label>
-              </td>
-              <th>수면시간</th>
-              <td>
-                <label name="sleep">5시간 이하</label>
-              </td>
-              <th>배변상태</th>
-              <td>
-                <label id = "toilet">2회</label>
+                <label>약을 먹기 싫어해요</label>
               </td>
             </tr>
           </table>
 
-          <i class="btn btn-secondary btn-sm pull-right" href="../intranet/intranet_notice">목록</i>
+          <a class="btn btn-secondary btn-sm pull-right" href="../intranet/intranet_notice.html">목록</a>
 
 
         

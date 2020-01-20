@@ -391,24 +391,46 @@
                 <input type = "radio" id="tem_3" name = "tem" disabled>
                 <label for = "tem_3">고열</label>
               </td>
+              <th>배변상태</th>
+              <td colspan="2">
+                <input type = "radio" id="toilet_1" name = "toilet" checked="true;">
+                <label for = "toilet_1">좋음</label>
+                <input type = "radio" id="toilet_2" name = "toilet" disabled>
+                <label for = "toilet_2">보통</label>
+                <input type = "radio" id="toilet_3" name = "toilet" disabled>
+                <label for = "toilet_3">나쁨</label>
+              </td>
             </tr>
             <tr>
               <th>식사여부</th>
               <td>
-                <label name="eat">먹음</label>
+                <label name="eat1">먹음</label>
               </td>
+              <th>이유식/간식</th>
+              <td>
+                <label id = "eat2">먹음</label>
+              </td>              
+              <th>수유여부</th>
+              <td>
+                <label name="eat3">안먹음</label>
+              </td>
+            </tr>
+            <tr>
               <th>수면시간</th>
               <td>
                 <label name="sleep">5시간 이하</label>
               </td>
-              <th>배변상태</th>
-              <td>
-                <label id = "toilet">2회</label>
+              <th>체온상태</th>
+              <td colspan="3">                
+                <label>오전 : </label>
+                <label name="tem_am">36~37도</label>&nbsp;&nbsp;&nbsp;
+                <label>오후 : </label>
+                <label name="tem_pm">37도 이상</label>
               </td>
             </tr>
           </table>
 
-          <i class="btn btn-secondary btn-sm pull-right" href="../intranet/intranet_notice">목록</i>
+          <a class="btn btn-secondary btn-sm pull-right" href="../intranet/intranet_notice.html">목록</a>
 
 
         
