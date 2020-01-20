@@ -328,15 +328,15 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">원아 등록</h1>
+          <h1 class="h3 mb-4 text-gray-800" style="text-align: center;">원아 등록</h1>
 
         <div class = "registerFormArea">
             <div class = "student register form">
-              <table class="text-gray-800" id = "studentRegForm" border = '1'>
+              <table class="text-gray-800" id = "studentRegForm" border = '1' style="width: 80%;" align="center">
                 <tr>
                   <th> <label >원아명</label></th>
                   <td colspan = "2"> &nbsp;
-                    <input type = "text" id = "studentName">
+                    <input type = "text" id = "studentName" size="30%">
                   </td>
                   <th><label>성별</label></th>
                   <td> &nbsp;
@@ -368,7 +368,15 @@
                 </tr>
                 <tr>
                   <th><label>주소</label></th>
-                  <td colspan="6">&nbsp;<input type = "text" id = "studentAddress"></td>
+                  <td colspan="6">&nbsp;
+                    <select name="addr" id="addr" style="width: 10%;">
+                      <option value="종로">종로</option>
+                      <option value="강남">강남</option>
+                      <option value="마포">마포</option>
+                      <option value="신림">신림</option>
+                    </select>
+                    <input type = "text" id = "studentAddress" style="width: 85%;" placeholder="상세주소를 적어주세요">
+                  </td>
                 </tr>
                 <tr>
                   <th><label>나이(만)</label></th>
@@ -380,7 +388,7 @@
                       <option id = "studentForignN">N</option>
                     </select>
                   </td>
-                  <th><label>장애여부</label></th>
+                  <th><label >장애여부</label></th>
                   <td>&nbsp;
                     <select id = "studentHandicapYN">
                       <option id = "studentHandicapY">Y</option>
@@ -418,7 +426,9 @@
                   </td>
                 </tr>
               </table>
-              <table class="text-gray-800" id = "perantRegForm" border = '1'>
+              <br>
+              
+              <table class="text-gray-800" id = "perantRegForm" border = '1' style="width: 80%;" align="center">
                 <tr>
                   <th><label>관계</label></th>
                   <th><label>이름</label></th>
