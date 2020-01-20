@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clean Blog - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <style>
+        table.board-write2 { width:100%; margin-top:15px; border-top:1px solid #ddd; }
+        table.board-write2 th { padding:8px 0; font-size:14px; font-weight:600; color:#333; line-height:30px; text-align:center; vertical-align:top; background-color:#f8f8f8; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
+        table.board-write2 td { padding:8px 0; font-size:14px; color:#333; line-height:30px; text-align:center; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
+        table.board-write2 th.first, table.board-write2 td.first { border-left:none; }
+        table.board-write2 td input { width:60%; height:24px; margin:0; padding-left:7px; font-family:"NanumGothic","Nanum Gothic"; font-size:12px; color:#666; vertical-align:top; border:1px solid #ddd; }
+        table.board-write2 td input.radio { width:auto; height:auto; margin:9px 5px 0 0; padding:0; vertical-align:top; border:none; }
+        table.board-write2 td select { height:30px; margin:0; padding-left:7px; font-family:"NanumGothic","Nanum Gothic"; font-size:12px; color:#666; vertical-align:top; border:1px solid #ddd; }
+        table.board-write2 td .width1 { width:60%; }
+        table.board-write2 td .width2 { width:18%; }
+        table.board-write2 td .mg1 { margin-left:10px !important; }
+        table.board-write2 td a.click { display:inline-block; margin-left:8px; padding:0 15px; font-size:13px; font-weight:600; color:#fff; background-color:#666; }
+        table.board-write2 td span { font-weight:600; color:#e00000; }
+
+        table.board-write2 { margin-top:10px; display:block; overflow-x:auto; white-space:nowrap; }
+	    table.board-write2 th { min-width:70px; font-size:12px; line-height:21px; padding:8px 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	    table.board-write2 td { font-size:12px; line-height:25px; padding:10px 0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	    table.board-write2 td input { width:40%; height:25px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	    table.board-write2 td input.radio { margin:7px 4px 0 0; }
+	    table.board-write2 td select { height:25px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+	    table.board-write2 td .mg1 { margin-left:5px !important; }
+	    table.board-write2 td a.click { margin-left:5px; padding:0 10px; font-size:12px; }
+
+        .mgtop7 { margin-top:10px !important; }
+        .mgtop7 { margin-top:15px !important; }
+        
+        table.board-write { width:100%; margin-top:40px; border-top:2px solid #333; }
+        table.board-write th { width:220px; padding:8px 0 8px 30px; font-size:15px; font-weight:600; color:#333; line-height:30px; text-align:left; vertical-align:top; background-color:#f5f5f5; border-bottom:1px solid #ddd; }
+        table.board-write th span { color:#e00000; }
+        table.board-write td { padding:8px 0 8px 20px; font-size:15px; color:#555; line-height:30px; border-bottom:1px solid #ddd; }
+        table.board-write td em { display:inline-block; margin-left:8px; font-size:13px; color:#333; }
+        table.board-write td strong { color:#333; }
+        table.board-write td span { margin-left:8px; font-weight:600; color:#ffa800; }
+        table.board-write td input { height:24px; margin:0; padding-left:7px; font-family:"NanumGothic","Nanum Gothic"; font-size:14px; color:#666; vertical-align:top; border:1px solid #ddd; }
+        table.board-write td input.radio { width:auto; height:auto; margin:9px 5px 0 0; padding:0; vertical-align:top; border:none; }
+        table.board-write td input.file { width:500px; height:30px; margin:0; padding:0; vertical-align:top; border:none; background:none; }
+        table.board-write td select { height:30px; padding-left:5px; font-family:"NanumGothic","Nanum Gothic"; font-size:14px; color:#666; vertical-align:top; border:1px solid #ddd; }
+        table.board-write td textarea { width:702px; height:200px; padding:5px; font-family:"NanumGothic","Nanum Gothic"; font-size:14px; color:#666; vertical-align:top; border:1px solid #ddd; }
+        table.board-write td .mg1 { margin-right:60px !important; }
+        table.board-write td .mg2 { margin-left:20px !important; }
+        table.board-write td .mg3 { margin-left:20px !important; }
+        table.board-write td .mg4 { margin-top:5px !important; }
+        table.board-write td .width1 { width:322px; }
+        table.board-write td .width2 { width:100px; }
+        table.board-write td .width3 { width:56px; }
+        table.board-write td .width4 { width:200px; }
+        table.board-write td .width5 { width:500px; }
+        table.board-write td a.click { display:inline-block; margin-left:8px; padding:0 25px; font-size:13px; font-weight:600; color:#fff; background-color:#666; }
+        table.board-write td a.click2 { display:inline-block; padding:0 25px; font-size:13px; font-weight:600; color:#fff; background-color:#ffa800; }
+        table.board-write td table.tbl4 { width:60%; }
+        
+        #form{
+            width: fit-content;
+           
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color:#868e96">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">메인페이지로 가는거</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item dropdown show">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">첫번째메뉴</a>
+              <div class="dropdown-menu " aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">세부항목1</a>
+                <a class="dropdown-item" href="#">세부항목2</a>
+                <a class="dropdown-item" href="#">세부항목3</a>
+              </div>
+          </li> 
+          <li class="nav-item dropdown show">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">두번째메뉴</a>
+              <div class="dropdown-menu " aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">세부항목1</a>
+                <a class="dropdown-item" href="#">세부항목2</a>
+                <a class="dropdown-item" href="#">세부항목3</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown show">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">세번째메뉴</a>
+              <div class="dropdown-menu " aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">세부항목1</a>
+                <a class="dropdown-item" href="#">세부항목2</a>
+                <a class="dropdown-item" href="#">세부항목3</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown show">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">네번째메뉴</a>
+              <div class="dropdown-menu " aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">세부항목1</a>
+                <a class="dropdown-item" href="#">세부항목2</a>
+                <a class="dropdown-item" href="#">세부항목3</a>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Main Content -->
+  <br>
+  <br>
+  <br>
+  <div style="border-top: 3px solid gray; border-bottom: 3px solid gray; text-align: center; font-size: 3em;" >
+    알림장 작성
+  </div>
+  
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <form>
+            <table class="table table-bordered">
+                    <th colspan="4" style="background-color: #002c5f; color: white; border-bottom: 0.3rem solid oldlace;" text-align="center"><div id="alim_date">2020-01-10</div></th>
+                    <tr>
+                        <td colspan="4"><textarea name="alim_text" id="alim_text" cols="30" rows="10" placeholder="가정에서 이렇게 지냄" style="width: 100%; resize: none;"></textarea></td>                    
+                    </tr>
+                    <tr align="center">
+                        <td style="width: 25%;"><a href=""><i class="fas fa-images" style="font-size: 30px;"></i></a></td>
+                        <td style="width: 25%;"><a href=""><i class="fas fa-video" style="font-size: 30px;"></i></a></td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: #002c5f; color: white;">기본입력</td>
+                    </tr>
+                    <tr> 
+                        <td style="border-right: none;">기분</td>
+                        <td style="border-left: none; border-right: none;"><input type="radio" id="alim_giboon1" name="giboon"><label for="alim_giboon1">좋음</label></td>
+                        <td style="border-left: none; border-right: none;"><input type="radio" id="alim_giboon2" name="giboon"><label for="alim_giboon2">보통</label></td>
+                        <td style="border-left: none; "><input type="radio" id="alim_giboon3" name="giboon"><label for="alim_giboon3">나쁨</label></td>
+                    </tr>
+                    <tr> 
+                        <td style="border-right: none;">건강</td>
+                        <td style="border-left: none; border-right: none;"><input type="radio" id="health1" name="health"><label for="health1">좋음</label></td>
+                        <td style="border-left: none; border-right: none;"><input type="radio" id="health2" name="health"><label for="health2">보통</label></td>
+                        <td style="border-left: none; "><input type="radio" id="health3" name="health"><label for="health3">나쁨</label></td>
+                    </tr>
+                    <tr> 
+                        <td style="border-right: none;">체온체크</td>
+                        <td style="border-left: none; border-right: none;"><input type="radio" id="ondo1" name="ondo"><label for="ondo1">정상</label></td>
+                        <td style="border-left: none; border-right: none;"><input type="radio" id="ondo2" name="ondo"><label for="ondo2">미열</label></td>
+                        <td style="border-left: none; "><input type="radio" id="ondo3" name="ondo"><label for="ondo3">고열</label></td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: none;">식사여부</td>
+                        <td colspan="3"style="border-left: none;">
+                            <select name="bob" id="bob" style="width: 70%;">
+                                <option value="선택안함">선택안함</option>
+                                <option value="약간">약간</option>
+                                <option value="보통">보통</option>
+                                <option value="많이">많이</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: none;">수면시간</td>
+                        <td colspan="3"style="border-left: none;">
+                            <select name="sleep" id="sleep" style="width: 70%;">
+                                <option value="선택안함">선택안함</option>
+                                <option value="8시간">8시간 이상</option>
+                                <option value="6~8시간">6~8시간</option>
+                                <option value="4~6시간">4~6시간</option>
+                                <option value="4시간미만">4시간미만</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: none;">배변상태</td>
+                        <td colspan="3"style="border-left: none;">
+                            <select name="dong" id="dong" style="width: 70%;">
+                                <option value="선택안함">선택안함</option>
+                                <option value="좋음">좋음</option>
+                                <option value="보통">보통</option>
+                                <option value="나쁨">나쁨</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: #002c5f; color: white;">상제 입력</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: none;">이유식/간식</td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none;"><label for="add_iu" style="color: grey;"></label><a href=""><i class="fas fa-plus" style="font-size: 25px;"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: none;">수유여부</td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none;"><label for="add_suu" style="color: grey;">   </label><a href=""><i class="fas fa-plus" style="font-size: 25px;"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: none;">수면시간</td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none;"><label for="add_jam" style="color: grey;">   </label><a href=""><i class="fas fa-plus" style="font-size: 25px;"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: none;">배변상태</td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none; border-right: none;"></td>
+                        <td style="border-left: none;"><label for="add_dong" style="color: grey;">   </label><a href=""><i class="fas fa-plus" style="font-size: 25px;"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-right: none;">체온상태</td>
+                        <td style="border-left: none; border-right: none;">
+                            <select name="chk_ondo" id="chk_ondo" style="width: 80%;">
+                                <option value="">오전</option>
+                                <option value="35도 미만">35도 미만</option>
+                                <option value="35~36도">35~36도</option>
+                                <option value="36~37도">36~37도</option>
+                                <option value="37도 이상">37도 이상</option>
+                            </select>
+                        </td>
+                        <td style="border-left: none;">
+                            <select name="chk_ondo" id="chk_ondo" style="width: 80%;">
+                                <option value="">오전</option>
+                                <option value="35도 미만">35도 미만</option>
+                                <option value="35~36도">35~36도</option>
+                                <option value="36~37도">36~37도</option>
+                                <option value="37도 이상">37도 이상</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: #002c5f; color: white; border: 0.1rem solid gray">
+                            <div style="text-align: center;" onclick=""><img src="" alt="">임시저장</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: #868e96; color: white; border: 0.1rem solid gray">
+                            <div style="text-align: center;" onclick=""><img src="" alt="">취소</div>
+                        </td>
+                    </tr>
+            </table>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+               footer 내부 내용1
+            </li>
+            <li class="list-inline-item">
+                footer 내부 내용2
+            </li>
+            <li class="list-inline-item">
+                footer 내부 내용3
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyleft &copy; 아무나 가져다써 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      var date = new Date();
+      $(function(){
+          $('#alim_date').text(date);
+      })
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
