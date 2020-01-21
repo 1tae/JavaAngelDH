@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=1">
-	<title>로그인 테스트파일</title>
+	<title>아이디 찾기</title>
 	
 	<!-- 개별페이지 CSS -->
 	<link href="css/clean-blog.min.css" rel="stylesheet">
@@ -250,8 +250,8 @@ vertical-align: middle;}
 		<div class="card" style="width: 600px;">
 			<div class="card-body">
 				<div class="tabbtn">
-					<a href="#" class="on">아이디찾기</a>
-					<a href="#">비밀번호찾기</a>
+					<a href="./login1.html" class="on">아이디찾기</a>
+					<a href="./login2.html">비밀번호찾기</a>
 				</div>
 				<div class="tabParent">
 					<div class="tabCon on">
@@ -262,14 +262,15 @@ vertical-align: middle;}
 								인증 이외의 용도 또는 저장되지 않습니다.</p>
 						</div>
 						<div class="btnWrap">
-							<input type="submit" value="인증하기" class="btn login_btn">
+							<input type="button" value="인증하기" class="btn login_btn" onclick="location='login4.html'">
+							<!-- 나중에 type을 submit으로 변경 -->
 						</div>
 					</div>
 				</div>
 			<div class="btna">
 				<a href="">HOME</a>
-				<a href="">로그인</a>
-				<a href="">회원가입</a>
+				<a href="login.html">로그인</a>
+				<a href="join.html">회원가입</a>
 
 			</div>
 			<div id="footer">
