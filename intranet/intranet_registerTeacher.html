@@ -340,129 +340,170 @@
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">교사 등록</h1>
 
-          <div class = "registerFormArea">
-            <div class = "teacher register form">
-              <table class="text-gray-800" id = "studentRegForm" border = '1'>
-                <tr>
-                  <th> <label >직급</label></th>
-                  <td> &nbsp;
-                    <select id = teacherGrade>
-                      <option>원장</option>
-                      <option>원감</option>
-                      <option>정교사</option>
-                      <option>보조교사</option>
-                    </select> 
-                  </td>
-                  <th><label>개인번호</label></th>
-                  <td> &nbsp;
-                      <input type = "text" id = "teacherNum">
-                  </td>
-                  <td colspan="2" rowspan = "5">사진</td>
-                </tr>
-                <tr>
-                  <th><label>이름</label></th>
-                  <td ><input type = "text" id = "teacherName"></td>
-                  <th><label>주민번호</label></th>
-                  <td><input type = "text" id = "teacherPNum"></td>
-                </tr>
-                <tr>
-                  <th><label>주소</label></th>
-                  <td colspan="3"><input type = "text" id = "teacherAddress"></td>
-                </tr>
-                <tr>
-                  <th><label>연락처</label></th>
-                  <td><input type = "text" id = "teacherPhone"></td>                
-                  <th><label>이메일</label></th>
-                  <td><input type = "text" id = "teacherEmail"></td>            
-                </tr>
-                <tr>
-                  <th><label>입사일</label></th>
-                  <td><input type = "date" id = "teacherEnrolldate"></td>                
-                  <th><label>퇴사일</label></th>
-                  <td><input type = "date" id = "teacherResigndate"></td>                 
-                </tr>
-                <tr>             
-                  <th><label>담임반</label></th>
-                  <td>
-                    <input type = "radio" id = "teacherClass1" name = "class">1반
-                    <input type = "radio" id = "teacherClass2" name = "class">2반
-                    <input type = "radio" id = "teacherClass3" name = "class">3반
-                    <input type = "radio" id = "teacherClass4" name = "class">4반
-                  </td>
-                  <th><label>상태</label></th>
-                  <td>
-                    <select id = "teacherState">
-                      <option id = "teacherStateA">재직</option>
-                      <option id = "teacherStateB">퇴직</option>
-                    </select>
-                  </td>
-                  <td>
-                    <button onclick="updateImg();" id = "studentImgU">사진등록</button>
-                  </td>
-                  <td>
-                    <button onclick="deleteImg();" id = "studentImgD">사진삭제</button>
-                  </td>
-                </tr>
-              </table>              
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">교사등록창</h6>
             </div>
-                         
-          </div>
-          <div class = "teacher empty">
-            <button class = "btn btn-primary btn-sm" onclick="studentRegister();">등록</button>
-            <button class = "btn btn-primary btn-sm" onclick="studentModify();">수정</button> 
-            <button class = "btn btn-primary btn-sm" onclick="studentDelete();">삭제</button>
-            <button class = "btn btn-primary btn-sm" onclick="studentCancel();">취소</button>          
-          </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                  <form action="" method="" name = "registerTeacher">
+                    <table class="table table-bordered" id="dataTable" width="100%" table-layout="fixed;" word-break="break-all;" cellspacing="0">
+                      <tr>
+                        <th style="padding:0.2rem">이름</th>
+                        <td style="padding:0.2rem">
+                          <input type = "text" id = "teacherName"name = "teacherName">
+                        </td>
+                        <th style="padding:0.2rem">직급</th>
+                        <td style="padding:0.2rem">
+                          <select id="teacherGrade" name = "teacherGrade">
+                            <option id="teacherGrade" name = "teacherGrade">원장</option> 
+                            <option id="teacherGrade" name = "teacherGrade">부원장</option> 
+                            <option id="teacherGrade" name = "teacherGrade">정교사</option> 
+                            <option id="teacherGrade" name = "teacherGrade">보조교사</option> 
+                            <option id="teacherGrade" name = "teacherGrade">조리원</option> 
+                          </select>                  
+                        </td>
+                        <th style="padding:0.2rem">개인번호</th>
+                        <td style="padding:0.2rem">
+                          <input type = "text" id = "teacherNum" name= "teacherNum">
+                        </td>
+                        <td style="padding:0.2rem" colspan="2" rowspan = "4"><span class = "fa fa-smile fa-5x" style = "padding: 22%; padding-left: 29%;"></span></td>
+                      </tr>
+                      <tr>
+                        <th style="padding:0.2rem">주민번호</th>
+                        <td style="padding:0.2rem">
+                          <input type="text" id = "teacherNo1" name = "teacherNo1" style="width: 46%;"> -
+                          <input type="text" id = "teacherNo" name = "teacherNo2" style="width: 46%;">
+                        </td>
+                        <th style="padding:0.2rem">연락처</th>
+                        <td style="padding:0.2rem">
+                          <input type="text" id="teacherPhone" name = "teacherPhone">
+                        </td>
+                        <th style="padding:0.2rem">이메일</th>
+                        <td style="padding:0.2rem">
+                          <input type = "text" id = "teacherEmail" name="teacherEmail">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th style="padding:0.2rem">주소</th>
+                        <td style="padding:0.2rem" colspan="5">
+                          <input type = "text" id = "teacherAddress" name = "teacherAddress" style="width: 99%;">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th style="padding:0.2rem">입사일</th>
+                        <td style="padding:0.2rem">
+                          <input type="date" id = "teacherEnrollDate" name = "teacherEnrollDate">
+                        </td>
+                        <th style="padding:0.2rem"> 퇴사일</th>
+                        <td style="padding:0.2rem">
+                          <input type = "date" id = "teacherResignDate" name = "teacherResignDate">
+                        </td>
+                        <th style="padding:0.2rem">상태</th>
+                        <td style="padding:0.2rem">
+                          <select id="teacherState" name = "teacherState">
+                            <option id="teacherStateY" name = "teacherStateY">재직</option> 
+                            <option id="teacherStateN" name = "teacherStateN">휴직</option> 
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th style="padding:0.2rem">담임반</th>
+                        <td style="padding:0.2rem">
+                          <input type = "radio" id = "teacherClass1" name = "teacherClass">
+                          <label for = "teacherClass1" style="display: initial;">1반</label>
+                          <input type = "radio" id = "teacherClass2" name = "teacherClass">
+                          <label for = "teacherClass2" style="display: initial;">2반</label>
+                          <input type = "radio" id = "teacherClass3" name = "teacherClass">
+                          <label for = "teacherClass3" style="display: initial;">3반</label>
+                          <input type = "radio" id = "teacherClass4" name = "teacherClass">
+                          <label for = "teacherClass4" style="display: initial;">4반</label>
+                        </td>
+                        <th style="padding:0.2rem">호봉</th>
+                        <td style="padding:0.2rem" colspan = '3'>
+                          <input type = "number" id = "teacherSalary" name = "teacherSalary" min="1" max="29"> 호봉
+                        </td>
+                        <td style="text-align: center; padding:0.2rem">
+                          <button class="btn btn-primary btn-sm" onclick="updateImg();" id = "studentImgU">등록</button>
+                        </td>
+                        <td style="text-align: center; padding:0.2rem">
+                          <button class="btn btn-primary btn-sm" onclick="deleteImg();" id = "studentImgD">삭제</button>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+              </div>
+            </div>
+            
+          </div>         
           
 
-          <div class = "teacher register view">
-            <table id = "viewable" class="table table-striped">
-              <tr>
-                <th></th>
-                <th>구분</th>
-                <th>개인번호</th>
-                <th>직급</th>
-                <th>성명</th>
-                <th>연락처</th>
-                <th>입사일</th>
-                <th>퇴사일</th>
-                <th>담임반</th>
-                <th>호봉</th>
-                <th>상태</th>                
-              </tr>
-              <tr>
-                <td>
-                  <input type = "checkbox">
-                </td>
-                <td><label class = "num">1</label></td>
-                <td><label class = "outputTNum">18-025</label></td>
-                <td><label class = "outputTGrade">정교사</label></td>
-                <td><label class = "outputTName">김선생</label></td>
-                <td><label class = "outputPPhone">01066130362</label></td>
-                <td><label class = "outputTEnroll">2018-03-01</label></td>
-                <td><label class = "outputTResing"></label></td>
-                <td><label class = "outputTClass">1반</label></td>
-                <td><label class = "outputTPay">2호봉</label></td>
-                <td><label class = "outputTState">재직</label></td>
-              </tr>
-              <tr>
+        <div class="card shadow mb-4">
+            <div class="card-header py-3"> 
+              <table width="100%" table-layout="fixed;" word-break="break-all;" cellspacing="0">
+                <tr>
                   <td>
-                    <input type = "checkbox">
+                    <h6 class="m-0 font-weight-bold text-primary" style="width: 100px">교사확인창</h6>
                   </td>
-                  <td><label class = "num">2</label></td>
-                  <td><label class = "outputTNum">15-004</label></td>
-                  <td><label class = "outputTGrade">정교사</label></td>
-                  <td><label class = "outputTName">박선생</label></td>
-                  <td><label class = "outputPPhone">0105557777</label></td>
-                  <td><label class = "outputTEnroll">2015-01-01</label></td>
-                  <td><label class = "outputTResing">2019-12-31</label></td>
-                  <td><label class = "outputTClass">2반</label></td>
-                  <td><label class = "outputTPay">5호봉</label></td>
-                  <td><label class = "outputTState">퇴직</label></td>
+                  <td align="right">
+                    <button class = "btn btn-primary btn-sm" onclick="studentRegister();">등록</button>
+                    <button class = "btn btn-primary btn-sm" onclick="studentModify();">수정</button>
+                    <button class = "btn btn-primary btn-sm" onclick="studentDelete();">삭제</button>
+                    <button class = "btn btn-primary btn-sm" onclick="studentCancel();">취소</button>          
+                  </td>
                 </tr>
-            </table>
+              </table>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive"> 
+                <table id = "viewable" class="table table-striped">
+                  <tr>
+                    <th></th>
+                    <th>구분</th>
+                    <th>개인번호</th>
+                    <th>직급</th>
+                    <th>성명</th>
+                    <th>연락처</th>
+                    <th>입사일</th>
+                    <th>퇴사일</th>
+                    <th>담임반</th>
+                    <th>호봉</th>
+                    <th>상태</th>                
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type = "checkbox">
+                    </td>
+                    <td style="text-align: center;"><span class = "num">1</span></td>
+                    <td style="text-align: center;"><span class = "outputTNum">18-025</span></td>
+                    <td style="text-align: center;"><span class = "outputTGrade">정교사</span></td>
+                    <td style="text-align: center;"><span class = "outputTName">김선생</span></td>
+                    <td style="text-align: center;"><span class = "outputPPhone">01066130362</span></td>
+                    <td style="text-align: center;"><span class = "outputTEnroll">2018-03-01</span></td>
+                    <td style="text-align: center;"><span class = "outputTResing"></span></td>
+                    <td style="text-align: center;"><span class = "outputTClass">1반</span></td>
+                    <td style="text-align: center;"><span class = "outputTPay">2호봉</span></td>
+                    <td style="text-align: center;"><span class = "outputTState">재직</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type = "checkbox">
+                    </td>
+                    <td style="text-align: center;"> <span class = "num">2</span></td>
+                    <td style="text-align: center;"> <span class = "outputTNum">15-004</span></td>
+                    <td style="text-align: center;"> <span class = "outputTGrade">정교사</span></td>
+                    <td style="text-align: center;"> <span class = "outputTName">박선생</span></td>
+                    <td style="text-align: center;"> <span class = "outputPPhone">0105557777</span></td>
+                    <td style="text-align: center;"> <span class = "outputTEnroll">2015-01-01</span></td>
+                    <td style="text-align: center;"> <span class = "outputTResing">2019-12-31</span></td>
+                    <td style="text-align: center;"> <span class = "outputTClass">2반</span></td>
+                    <td style="text-align: center;"> <span class = "outputTPay">5호봉</span></td>
+                    <td style="text-align: center;"> <span class = "outputTState">퇴직</span></td>
+                  </tr>
+                </table>                 
+              </div>
           </div>
-        
+
         </div>
 
         <!-- /.container-fluid -->

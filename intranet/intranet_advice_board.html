@@ -13,7 +13,7 @@
   <!-- Custom fonts for this template-->
   <link href="./intranet/all.min.css" rel="stylesheet" type="text/css">
   <link href="./intranet/css.css" rel="stylesheet">
-  <link href="./intranet/1_content.css" rel="stylesheet">
+  <link href="./intranet/1_content" rel="stylesheet">
   
 
   <!-- Custom styles for this template-->
@@ -340,7 +340,22 @@
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">상담신청</h1>
 
-          <table class = table  style="font-size:12px;">
+          <div class="card shadow mb-4">
+            <div class="card-header py-3"> 
+              <table width="100%" table-layout="fixed;" word-break="break-all;" cellspacing="0">
+                <tr>
+                  <td>
+                  </td>
+                  <td align="right">
+                    <button class = "btn btn-primary btn-sm" onclick="studentDelete();">삭제</button>                              
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive"> 
+                  <table id = "viewTable" class="table table-striped" style="font-size:12px; text-align: center;">
+                    
             <tr>
               <th></th>
               <th>구분</th>
@@ -382,19 +397,8 @@
                 </li>
               </ul>
             </nav>  
-          </div>  
-
-          <div class="col-md-4 offset-md-4 mt-5 pt-3">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="검색" aria-label="Recipient's username">
-              <div class="input-group-append">
-                <span class="input-group-text"><i class="fa fa-search"></i></span>
-              </div>
-              </div>
-            
+          </div>                   
         </div>
-          
-
         <!-- /.container-fluid -->
 
       </div>

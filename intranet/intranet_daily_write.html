@@ -339,45 +339,42 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">교육일지</h1>
-          <form action="write_ok.jsp" method="post" encType="multiplart/form-data"></form>
-            <table class="table table-bordered">
-              <tbody>
-                <tr>
-                    <th>제목 </th>
-                    <td colspan="3"><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
-                </tr>
-                <tr>
-                  <th>날짜</th>
-                  <td><input type = "date" name="date" class="form-control"></td>
-                  <th>반</th>
-                  <td>
-                    <select class="form-control">
-                      <option neme = "1">1반</option>
-                      <option neme = "2">2반</option>
-                      <option neme = "3">3반</option>
-                      <option neme = "4">4반</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                    <th>내용 </th>
-                    <td colspan="3"><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control" style="height: 300px; resize: none;"></textarea></tdcolspan="3">
-                </tr>
-                <tr>
-                    <th>첨부파일 </th>
-                    <td colspan="3"><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/>
-                    <span><input type="file"></span>
-                    </td>
-                </tr>
-              </tbody>  
-            </table>
-            <div class="float-right">
-              <input type="button" class="btn btn-link" value="등록" onclick="sendData()" class="pull-right"/>
-              <input type="button" class="btn btn-link" value="글 목록" onclick="javascript:location.href='list.jsp'"/>
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">교육일지 작성</h6>
             </div>
-          </form>
-        
-      </div>
+            <div class="card-body">
+              <div class="table-responsive">                  
+                <form action="write_ok.jsp" method="post" encType="multiplart/form-data"></form>
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                          <th>제목: </th>
+                          <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+                      </tr>
+                      <tr>
+                          <th>비밀번호: </th>
+                          <td><input type="password" placeholder="비밀번호를 입력하세요" class="form-control"/></td>
+                      </tr>
+                      <tr>
+                          <th>내용: </th>
+                          <td><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control" style="height: 300px; resize: none;"></textarea></td>
+                      </tr>
+                      <tr>
+                          <th>첨부파일: </th>
+                          <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/>
+                          <span><input type="file"></span>
+                          </td>
+                      </tr>                         
+                    </tbody>
+                  </table>
+                  <div class="float-right">
+                    <input type="button" class="btn btn-link btn-primary btn-sm text-gray-400" value="등록" onclick="sendData()" class="pull-right"/>
+                    <input type="button" class="btn btn-link btn-primary btn-sm text-gray-400" value="글 목록" onclick="javascript:location.href='list.jsp'"/>
+                  </div>
+              </form>
+          
+        </div>
           
 
         <!-- /.container-fluid -->

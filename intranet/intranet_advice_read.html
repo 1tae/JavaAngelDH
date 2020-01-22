@@ -339,34 +339,45 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">상담신청</h1>
-          
-          <table class= "table">
-            <tr>
-              <th>제목</th>
-              <td colspan="3" name = "subject">상담신청합니다</td>            
-              <th>상담 날짜</th>
-              <td name = "date">2020-01-30</td>
-            </tr>
-            <tr>
-              <th>반</th>
-              <td name = "class">1반</td>
-              <th>아이이름</th>
-              <td name = "studentName">홍달이</td>
-              <th>작성자</th>
-              <td name = "writer">dalmom</td>
-              
-            </tr>
-            <tr>
-              <th>내용</th>
-              <td colspan = "5" name = "content">
-                상담신청합니다
-              </td>
-            </tr>
-            <tr>
-              <th>첨부파일</th>
-              <td colspan = "5">첨부파일이이이이</td>
-            </tr>
-          </table>
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">상담신청확인</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">                  
+                <form action="write_ok.jsp" method="post" encType="multiplart/form-data"></form>
+                  <table class="table table-bordered" style="font-size: 12px;">
+                    <tr>
+                      <th>제목</th>
+                      <td colspan="3" name = "subject">상담신청합니다</td>            
+                      <th>상담 날짜</th>
+                      <td name = "date">2020-01-30</td>
+                    </tr>
+                    <tr>
+                      <th>반</th>
+                      <td name = "class">1반</td>
+                      <th>아이이름</th>
+                      <td name = "studentName">홍달이</td>
+                      <th>작성자</th>
+                      <td name = "writer">dalmom</td>
+                      
+                    </tr>
+                    <tr>
+                      <th>내용</th>
+                      <td colspan = "5" name = "content">
+                        상담신청합니다<br>
+                        상담신청합니다<br>
+                        상담신청합니다<br>
+                        상담신청합니다<br>
+                        상담신청합니다<br>
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>첨부파일</th>
+                      <td colspan = "5">첨부파일이이이이</td>
+                    </tr>
+                  </table>
 
           <a class="btn btn-secondary btn-sm pull-right" href="../intranet/intranet_advice_board.html">목록</a>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0071)https://blackrockdigital.github.io/startbootstrap-sb-admin-2/blank.html -->
+<!-- saved from url=(0061)https://blackrockdigital.github.io/startbootstrap-sb-admin-2/ -->
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   
@@ -335,117 +335,125 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
+
         <div class="container-fluid">
-
           <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">알림장 확인</h1>
+          <h1 class="h3 mb-4 text-gray-800">알림장</h1>
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">알림장</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">                  
+                <form action="write_ok.jsp" method="post" encType="multiplart/form-data"></form>
+                  <table class="table table-bordered" style="font-size: 12px;">
+                    <tbody>
+                      <tr>
+                        <th>카테고리</th>
+                        <td>
+                          <label style="display: initial;" id = "category">알림장</label>
+                        </td>
+                        <th>제목</th>
+                        <td colspan="3">
+                          <label style="display: initial;" id = "title">박응애 알림장입니다</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>반</th>
+                          <td>
+                            <label style="display: initial;" id = "class">1반</label>
+                          </td>
+                        <th>아이 이름</th>
+                          <td>
+                            <label style="display: initial;" id = "name">박응애</label>
+                          </td>
+                        <th>날짜</th>
+                          <td>
+                            <label style="display: initial;" id = "date">2020-01-19</label>
+                          </td>
+                      </tr>
+                      <tr>
+                        <th>내용</th>
+                        <td colspan="5">
+                          <label style="display: initial;" id = "content">밤에 잠을 못잤어요<br><br><br><br></label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>기분</th>
+                        <td colspan="2">
+                          <input type = "radio" id="condition_1" name = "condition" checked="true;">
+                          <label style="display: initial;" for = "condition_1">좋음</label>
+                          <input type = "radio" id="condition_2" name = "condition" disabled>
+                          <label style="display: initial;" for = "condition_2">보통</label>
+                          <input type = "radio" id="condition_3" name = "condition" disabled>
+                          <label style="display: initial;" for = "condition_3">나쁨</label>
+                        </td>
+                        <th>건강</th>
+                        <td colspan="2">
+                          <input type = "radio" id="health_1" name = "health" disabled>
+                          <label style="display: initial;" for = "health_1">좋음</label>
+                          <input type = "radio" id="health_2" name = "health" checked="true;">
+                          <label style="display: initial;" for = "health_2">보통</label>
+                          <input type = "radio" id="health_3" name = "health" disabled>
+                          <label style="display: initial;" for = "health_3">나쁨</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>체온체크</th>
+                        <td colspan="2">
+                          <input type = "radio" id="tem_1" name = "tem" checked="true;">
+                          <label style="display: initial;" for = "tem_1">정상</label>
+                          <input type = "radio" id="tem_2" name = "tem" disabled>
+                          <label style="display: initial;" for = "tem_2">미열</label>
+                          <input type = "radio" id="tem_3" name = "tem" disabled>
+                          <label style="display: initial;" for = "tem_3">고열</label>
+                        </td>
+                        <th>배변상태</th>
+                        <td colspan="2">
+                          <input type = "radio" id="toilet_1" name = "toilet" checked="true;">
+                          <label style="display: initial;" for = "toilet_1">좋음</label>
+                          <input type = "radio" id="toilet_2" name = "toilet" disabled>
+                          <label style="display: initial;" for = "toilet_2">보통</label>
+                          <input type = "radio" id="toilet_3" name = "toilet" disabled>
+                          <label style="display: initial;" for = "toilet_3">나쁨</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>식사여부</th>
+                        <td>
+                          <label style="display: initial;" name="eat1">먹음</label>
+                        </td>
+                        <th>이유식/간식</th>
+                        <td>
+                          <label id = "eat2">먹음</label>
+                        </td>              
+                        <th>수유여부</th>
+                        <td>
+                          <label style="display: initial;" name="eat3">안먹음</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>수면시간</th>
+                        <td>
+                          <label style="display: initial;" name="sleep">5시간 이하</label>
+                        </td>
+                        <th>체온상태</th>
+                        <td colspan="3">                
+                          <label>오전 : </label>
+                          <label style="display: initial;" name="tem_am">36~37도</label>&nbsp;&nbsp;&nbsp;
+                          <label>오후 : </label>
+                          <label style="display: initial;" name="tem_pm">37도 이상</label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="float-right">
+                    <input type="button" class="btn btn-link btn-primary btn-sm text-gray-400" value="목록" onclick="javascript:location.href='list.jsp'"/>
+                  </div>
+              </form>
           
-          <table class= "table">
-            <tr>
-              <th>카테고리</th>
-              <td>
-                <label id = "category">알림장</label>
-              </td>
-              <th>제목</th>
-              <td colspan="3">
-                <label id = "title">박응애 알림장입니다</label>
-              </td>
-            </tr>
-            <tr>
-              <th>반</th>
-                <td>
-                  <label id = "class">1반</label>
-                </td>
-              <th>아이 이름</th>
-                <td>
-                  <label id = "name">박응애</label>
-                </td>
-              <th>날짜</th>
-                <td>
-                  <label id = "date">2020-01-19</label>
-                </td>
-            </tr>
-            <tr>
-              <th>내용</th>
-              <td colspan="5">
-                <label id = "content">밤에 잠을 못잤어요<br><br><br><br></label>
-              </td>
-            </tr>
-            <tr>
-              <th>기분</th>
-              <td colspan="2">
-                <input type = "radio" id="condition_1" name = "condition" checked="true;">
-                <label for = "condition_1">좋음</label>
-                <input type = "radio" id="condition_2" name = "condition" disabled>
-                <label for = "condition_2">보통</label>
-                <input type = "radio" id="condition_3" name = "condition" disabled>
-                <label for = "condition_3">나쁨</label>
-              </td>
-              <th>건강</th>
-              <td colspan="2">
-                <input type = "radio" id="health_1" name = "health" disabled>
-                <label for = "health_1">좋음</label>
-                <input type = "radio" id="health_2" name = "health" checked="true;">
-                <label for = "health_2">보통</label>
-                <input type = "radio" id="health_3" name = "health" disabled>
-                <label for = "health_3">나쁨</label>
-              </td>
-            </tr>
-            <tr>
-              <th>체온체크</th>
-              <td colspan="2">
-                <input type = "radio" id="tem_1" name = "tem" checked="true;">
-                <label for = "tem_1">정상</label>
-                <input type = "radio" id="tem_2" name = "tem" disabled>
-                <label for = "tem_2">미열</label>
-                <input type = "radio" id="tem_3" name = "tem" disabled>
-                <label for = "tem_3">고열</label>
-              </td>
-              <th>배변상태</th>
-              <td colspan="2">
-                <input type = "radio" id="toilet_1" name = "toilet" checked="true;">
-                <label for = "toilet_1">좋음</label>
-                <input type = "radio" id="toilet_2" name = "toilet" disabled>
-                <label for = "toilet_2">보통</label>
-                <input type = "radio" id="toilet_3" name = "toilet" disabled>
-                <label for = "toilet_3">나쁨</label>
-              </td>
-            </tr>
-            <tr>
-              <th>식사여부</th>
-              <td>
-                <label name="eat1">먹음</label>
-              </td>
-              <th>이유식/간식</th>
-              <td>
-                <label id = "eat2">먹음</label>
-              </td>              
-              <th>수유여부</th>
-              <td>
-                <label name="eat3">안먹음</label>
-              </td>
-            </tr>
-            <tr>
-              <th>수면시간</th>
-              <td>
-                <label name="sleep">5시간 이하</label>
-              </td>
-              <th>체온상태</th>
-              <td colspan="3">                
-                <label>오전 : </label>
-                <label name="tem_am">36~37도</label>&nbsp;&nbsp;&nbsp;
-                <label>오후 : </label>
-                <label name="tem_pm">37도 이상</label>
-              </td>
-            </tr>
-          </table>
-
-          <a class="btn btn-secondary btn-sm pull-right" href="../intranet/intranet_notice.html">목록</a>
-
-
-        
         </div>
-          
 
         <!-- /.container-fluid -->
 
@@ -493,14 +501,21 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="./intranet/jquery.min.js"></script>
-  <script src="./intranet/bootstrap.bundle.min.js"></script>
+  <script src="../intranet/intranet/jquery.min.js"></script>
+  <script src="../intranet/intranet/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="./intranet/jquery.easing.min.js"></script>
+  <script src="../intranet/intranet/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="./intranet/sb-admin-2.min.js"></script>
+  <script src="../intranet/intranet/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../intranet/intranet/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../intranet/intranet/chart-area-demo.js"></script>
+  <script src="../intranet/intranet/chart-pie-demo.js"></script>
 
 
 
