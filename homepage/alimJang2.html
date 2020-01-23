@@ -85,15 +85,16 @@
         table.board-write td a.click2 { display:inline-block; padding:0 25px; font-size:13px; font-weight:600; color:#fff; background-color:#ffa800; }
         table.board-write td table.tbl4 { width:60%; }
         
+        .table-bordered{
+          font-size: 16px;
+        }
       
 .tabbtn{width: 100%;table-layout: fixed;border-collapse: collapse;}
-.tabbtn a.alimtab1 {background-color: #002c5f; color: white;}
+.tabbtn a.alimtab2 {background-color: #002c5f; color: white;}
 .tabbtn a {display: table-cell;height: 60px;
 font-size: 18px;text-align: center;
 vertical-align: middle;}
-.table-bordered{
-          font-size: 16px;
-        }
+
 
 
 @media screen and (max-width:1023px){.tabbtn a{display:table-cell;width: 1000%;}} 
@@ -189,69 +190,50 @@ vertical-align: middle;}
         <form>
             <table class="table table-bordered">
                     <tr>
-                        <td colspan="4"><textarea name="alim_text" id="alim_text" cols="30" rows="10" placeholder="가정에서 이렇게 지냄" style="width: 100%; resize: none;"></textarea></td>                    
-                    </tr>
-                    <tr align="center">
-                        <td style="width: 25%;"><a href=""><i class="fas fa-images" style="font-size: 30px;"></i></a></td>
-                        <td style="width: 25%;"><a href="" ><i class="fas fa-video" style="font-size: 30px;"></i></a></td>
-                        <td colspan="2"></td>
-                    </tr>
-                    <tr>
                         <td colspan="4" style="background-color: #002c5f; color: white;">기본입력</td>
                     </tr>
-                    <tr> 
-                        <td style="border-right: none;">기분</td>
-                        <td style="border-left: none; border-right: none;"><input type="radio" id="alim_giboon1" name="giboon"><label for="alim_giboon1">좋음</label></td>
-                        <td style="border-left: none; border-right: none;"><input type="radio" id="alim_giboon2" name="giboon"><label for="alim_giboon2">보통</label></td>
-                        <td style="border-left: none; "><input type="radio" id="alim_giboon3" name="giboon"><label for="alim_giboon3">나쁨</label></td>
-                    </tr>
-                    <tr> 
-                        <td style="border-right: none;">건강</td>
-                        <td style="border-left: none; border-right: none;"><input type="radio" id="health1" name="health"><label for="health1">좋음</label></td>
-                        <td style="border-left: none; border-right: none;"><input type="radio" id="health2" name="health"><label for="health2">보통</label></td>
-                        <td style="border-left: none; "><input type="radio" id="health3" name="health"><label for="health3">나쁨</label></td>
-                    </tr>
-                    <tr> 
-                        <td style="border-right: none;">체온체크</td>
-                        <td style="border-left: none; border-right: none;"><input type="radio" id="ondo1" name="ondo"><label for="ondo1">정상</label></td>
-                        <td style="border-left: none; border-right: none;"><input type="radio" id="ondo2" name="ondo"><label for="ondo2">미열</label></td>
-                        <td style="border-left: none; "><input type="radio" id="ondo3" name="ondo"><label for="ondo3">고열</label></td>
+                    <tr>
+                        <th style="border-right: none;">대상아이</th>
+                        <td colspan="3" style="border-left: none; border-right: none;">
+                            <input type="text" style="width: 70%;">
+                        </td>
                     </tr>
                     <tr>
-                        <td style="border-right: none;">식사여부</td>
+                        <th style="border-right: none;">귀가 방법</th>
                         <td colspan="3"style="border-left: none;">
                             <select name="bob" id="bob" style="width: 70%;">
-                                <option value="선택안함">선택안함</option>
-                                <option value="약간">약간</option>
-                                <option value="보통">보통</option>
-                                <option value="많이">많이</option>
+                                <option value="도보">귀가방법선택</option>
+                                <option value="도보">도보</option>
+                                <option value="차량">차량</option>
+                                <option value="버스">버스</option>
+                                <option value="지하철">지하철</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border-right: none;">수면시간</td>
+                        <th style="border-right: none;">귀가요청시간</th>
                         <td colspan="3"style="border-left: none;">
-                            <select name="sleep" id="sleep" style="width: 70%;">
-                                <option value="선택안함">선택안함</option>
-                                <option value="8시간">8시간 이상</option>
-                                <option value="6~8시간">6~8시간</option>
-                                <option value="4~6시간">4~6시간</option>
-                                <option value="4시간미만">4시간미만</option>
+                            <select name="bob" id="bob" style="width: 70%;">
+                                <option value="도보">시간 선택</option>
+                                <option value="오전">오전(12:00)</option>
+                                <option value="오전">오후(15:00)</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <td style="border-right: none;">배변상태</td>
-                        <td colspan="3"style="border-left: none;">
-                            <select name="dong" id="dong" style="width: 70%;">
-                                <option value="선택안함">선택안함</option>
-                                <option value="좋음">좋음</option>
-                                <option value="보통">보통</option>
-                                <option value="나쁨">나쁨</option>
-                            </select>
+                        <th style="border-right: none;">보호자</th>
+                        <td colspan="3" style="border-left: none; border-right: none;">
+                            <input type="text" style="width: 70%;" placeholder="원아와의 관계">
+                            <input type="text" style="width: 70%; margin-top: 5px;" placeholder="전화번호(-제외)">
                         </td>
                     </tr>
-                    
+                    <tr>
+                        <th style="border-right: none;">비상 연락망</th>
+                        <td colspan="3" style="border-left: none; border-right: none;">
+                            <input type="text" style="width: 70%;" placeholder="원아와의 관계">
+                            <input type="text" style="width: 70%; margin-top: 5px;" placeholder="전화번호(-제외)">
+                        </td>
+                    </tr>
                     <tr>
                         <td colspan="4" style="background-color: #002c5f; color: white; border: 0.1rem solid gray">
                             <div style="text-align: center;" onclick=""><img src="" alt="">임시저장</div>
