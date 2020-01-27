@@ -91,7 +91,6 @@
 
 
     <!-- 메인 컨텐츠 구역 -->
-    <br><br><br><br><br>
   	<div class="container">
     	<div class="row">
       		<div class="col-lg-8 col-md-10 mx-auto">
@@ -138,15 +137,19 @@
                                     <td><textarea cols="10" rows="10" placeholder="내용을 입력하세요. " name="content" class="form-control "  style="resize : none;"></textarea></td>
                                 </tr>
                                 <tr>
+                                  <th class="tatd">상담날짜</th>
+                                  <td><input type="date" name="qnadate" class="form-control"/> 
+                                  </td>
+                              </tr>
+                                <tr>
                                     <th class="tatd">첨부파일: </th>
-                                    <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/> 
+                                    <td>
                                         <span><input type="file"></span>
                                     </td>
                                 </tr>
                              
                         </tbody>
                     </table>
-
                     <div class="float-right">
                             <input class="btn btn-link" style="background: #002c5f; color: white;" type="button" value="문의 등록" onclick="sendData()" class="pull-right"/>
                     </div>
