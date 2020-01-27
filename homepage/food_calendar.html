@@ -101,6 +101,9 @@
         </div>
         <br>
         <div id="contents" class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mx-auto">
+            
             <div class="cal_top">
                 <a href="#" id="movePrevMonth"><span id="prevMonth" class="cal_tit">&lt;</span></a>
                 <span id="cal_top_year"></span>
@@ -108,7 +111,12 @@
                 <a href="#" id="moveNextMonth"><span id="nextMonth" class="cal_tit">&gt;</span></a>
             </div>
             <div id="cal_tab" class="cal">
-            </div> 
+            </div>
+            <div>
+                <img src="./img/food.jpg" style="width: 100%;" alt="음식 사진 들어갑니다">
+            </div>
+            </div>
+            </div>
         </div>
         <br>
         <br>
@@ -151,7 +159,7 @@
         var $tdSche = null;
      
         $(document).ready(function() {
-            drawCalendar();
+
             initDate();
             drawDays();
             $("#movePrevMonth").on("click", function(){movePrevMonth();});
@@ -159,23 +167,6 @@
         });
         
         //calendar 그리기
-        function drawCalendar(){
-            var setTableHTML = "";
-            setTableHTML+='<table class="calendar">';
-            setTableHTML+='<tr><th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th></tr>';
-
-                setTableHTML+='<tr height="100">';
-                for(var j=0;j<7;j++){
-                    setTableHTML+='<td style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap">';
-                    setTableHTML+='    <div class="cal-day"></div>';
-                    setTableHTML+='    <div class="cal-schedule"></div>';
-                    setTableHTML+='</td>';
-                }
-                setTableHTML+='</tr>';
-            
-            setTableHTML+='</table>';
-            $("#cal_tab").html(setTableHTML);
-        }
      
         //날짜 초기화
         function initDate(){
