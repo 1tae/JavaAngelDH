@@ -170,30 +170,23 @@ margin-left: 4px;
 }
 
 
-.ndd{
-	height: 200px;
-}
-
+.ndd{height: 200px;}
 #footer {clear: both;margin: 0 auto;text-align: center;}
-#footer ul {margin: 0 0 9px 0;}
+#footer ul {margin: 18px 0 9px 0;}
 #footer ul li{ font-size: 12px;position: relative;display: inline;padding: 0 3px 0 7px;white-space: nowrap;}
 #footer * {font-size: 12px;font-style: normal;line-height: normal;margin: 0;padding: 0;list-style: none;color: #333;}
-
 hr{margin-top:0; margin-bottom:0;}
-
-
-
+.btna a {  margin-right: 10px;}
 .header{text-align: center; }
 .loginArea{color: black; font-weight: 600;}
 .chkinfo{position: relative;margin-bottom: 29px;}
 .wrapper{position: relative; height: 100%;overflow: hidden;}
-
-  
+.btna{text-align: center;}
 @media screen and (max-width: 758px) {body {font-size: 15px;}}  
 @media screen and (max-width: 758px) {.loginArea{font-size: 33px;}}  
 @media screen and (max-width: 758px){.container { width: auto;padding: 60px 3% 0px;}}
-@media screen and (max-width: 758px){#footer { width: auto;}}
-
+ 
+@media screen and (max-width: 758px){#footer {width: auto;}}
 @media screen and (min-width: 768px){.container { width: auto;padding: 150px 3% ;}}
 .loginlogo{text-align: center; margin-bottom: 50px;}
 
@@ -201,7 +194,7 @@ hr{margin-top:0; margin-bottom:0;}
 @media (min-width: 1200px){.container{max-width: 1140px; height: 90%; padding: 180px;}}
 
  
- 
+a {text-decoration: none; color: #555;} 
  
  
  
@@ -213,15 +206,15 @@ hr{margin-top:0; margin-bottom:0;}
 <body>
 	
 	
-	<div class="wrapper">
+<div class="wrapper">
 	
 
         
         
         
-        <div class="container">
+    <div class="container">
             <div class="loginlogo"><h2 class="loginArea">로그인</h2></div>
-		<div class="d-flex justify-content-center h-100">
+	<div class="d-flex justify-content-center h-100">
 			<div class="card" style="width: 600px;">
 			<div class="card-body">
 				<form>
@@ -262,23 +255,27 @@ hr{margin-top:0; margin-bottom:0;}
 		
 		</div>
 	
-</div>
-</div>	
-
+	</div>
+	<div class="btna">
+	<a href="mainpage.html">HOME</a>
+	<a href="join.html">회원가입</a>
+	</div>
+	
 				<div id="footer">
-				<ul>
-					<li><a>이용약관</a></li>
-					<li><strong><a>개인정보처리방침</a></strong></li>
-					<li><a>책임의 한계와 법적고지</a></li>
-					<li><a>회원정보 고객센터 </a></li>
-				</ul>
-				<address>
-					<em class="copy">Copyright</em>
-					<em class="u_cri">©</em>
-					<a> Corp.</a>
-					<span class="all_r">All Rights Reserved.</span>
-				</address>
-                </div>
-            </div>
+					<ul>
+						<li><a>이용약관</a></li>
+						<li><strong><a>개인정보처리방침</a></strong></li>
+						<li><a>책임의 한계와 법적고지</a></li>
+						<li><a>회원정보 고객센터 </a></li>
+					</ul>
+					<address>
+						<em class="copy">Copyright</em>
+						<em class="u_cri">©</em>
+						<a> Corp.</a>
+						<span class="all_r">All Rights Reserved.</span>
+					</address>
+				 </div>
+</div>	
+</div>
 </body>
 </html>

@@ -31,16 +31,18 @@
         
         
         <link href="css/nav.css" rel="stylesheet">
-          
+        <style>
+          .row h5{font-size: 25px; font-weight: 600; margin-bottom: 40px;}
+        </style>
     </head>
-    <body>
+    <body style="background: #f5f6f7;">
 
         <!-- Navigation --><header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav" style="background-color: white; position: fixed;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="mainNav" style="background-color: white;">
       <div class="container">
         <a class="navbar-brand" href="mainpage.html" style="font-size: 28px; color: black;">무슨무슨유치원</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
+         
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -76,12 +78,12 @@
       </div>
     </nav>
   </header class="masthead">
-
-    
+  <div class="top_bg">
+    <a class="top_p"> 팡팡어린이집 </a>
+     <p>회원가입 약관</p>
+   </div>
       <!-- Main Content -->
-      <div style="border-top: 3px solid gray; border-bottom: 3px solid gray; text-align: center; font-size: 3em;" >
-          약관동의
-        </div>
+      <br><br><br>
         <br>
         <div id="contents" class="container">
             <div class="row">
@@ -432,7 +434,7 @@
                 </div>
                 <br><br>
                 <h5>개인정보의 보유 및 이용기간</h5>
-                <div class="policy" style="height:50px; font-size:14px; line-height:23px; height: 100px; overflow:scroll;">
+                <div class="policy" style="font-size:14px; line-height:23px; margin:20px; height: 100px; overflow:scroll;">
                     KH 요정의 집 어린이집 홈페이지에서 회원가입으로 수집된 개인정보는 회원탈퇴시까지 보유하며, 회원가입 후 2년 동안 재동의 없는 회원의 경우 개인정보보호를 위해 안내 메일 또는 공지사항 발표 후 1주일간의 통지 기간을 거처 서비스 사용을 중지할 수 있습니다. 
                 </div>
                 <div class="assent" align="right" style="font-size:15px">
@@ -442,13 +444,14 @@
                     <label><input type="radio" class="agreeDN" name="agreeD" id="agreeD2" value="N" style="width:20px; height:20px; margin-top:2px; margin-left:10px;"></label>
                     <label for="agreeD2">동의하지 않습니다.</label>
                 </div>
+                <br><br>
                 <div class="assent2" align="center">
                     <input type="checkbox" class="checkbox01 ml agreeAll" name="agreeAll" id="agreeAll"><label for="agreeAll" style="margin-top:20px;">&nbsp;&nbsp;위 전체 내용에 동의 합니다.</label>
 
                 </div>
                 <div class="assent2" style="height:auto; background:#fff; margin-top:50px; margin-bottom: 50px;">
                     
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center" style="background-color: #f5f6f7;">
                   <button class="btn" style="background: #002c5f; color: white; width: 150px;">
                       취소
                   </button>
