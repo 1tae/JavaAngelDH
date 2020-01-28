@@ -2,7 +2,7 @@
  * Start Bootstrap - Clean Blog v5.0.8 (https://startbootstrap.com/template-overviews/clean-blog)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
- */body{font-size:20px;color:#212529;font-family: 'Noto Sans KR', sans-serif;}
+ */body{color:#212529;font-family: 'Noto Sans KR', sans-serif;}
 
  p{line-height:1.5;margin:30px 0}
 
@@ -32,8 +32,8 @@
  
  #mainNav{position:absolute;border-bottom:1px solid #e9ecef; font-family: 'Noto Sans KR', sans-serif;  background-color: white;}
  
- #mainNav .navbar-brand{font-weight:800;color:#343a40;}
- #mainNav .navbar-toggler{font-size:12px;font-weight:800;padding:13px;text-transform:uppercase;color:#343a40}
+ #mainNav .navbar-brand{font-weight:800;color:black;}
+ #mainNav .navbar-toggler{font-size:12px;font-weight:800;padding:13px;text-transform:uppercase;color:black;}
 
  #mainNav .navbar-nav>li.nav-item>a{font-size:18px;font-weight:800;letter-spacing:1px;text-transform:uppercase;}
  @media only screen and (min-width:992px){#mainNav{border-bottom:1px solid transparent;background:0 0}
@@ -60,7 +60,7 @@
  
  header.masthead{margin-bottom:50px;background:no-repeat center center;background-attachment:scroll;position:relative;background-size:cover; }
  
- header.masthead .overlay{position:absolute;top:0%;left:0%;height:100%;width:100%; background-image: url(../img/backimg2.jpg); background-repeat: no-repeat; background-size:cover; background-position: center;}
+ .overlay{position:absolute;top:0%;left:0%;height:100%;width:100%; background-image: url(../img/abc.jpg); background-repeat: no-repeat; background-size:cover; background-position: center;}
  
  header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading{padding:200px 0 150px;color:#fff}
  
@@ -125,3 +125,7 @@
  .btn-primary:active,.btn-primary:focus,.btn-primary:hover{color:#fff;background-color:#00657b!important;border-color:#00657b!important}
  
  .btn-lg{font-size:16px;padding:25px 35px}
+ .top_p p{font-size:1rem;}
+ .top_p{font-size: 58px; font-weight: 900;}
+ .top_bg{height: 360px;text-align: center; background-image: url(../img/top_bg.jpg); padding-top: 180px; }
+ .top_bg p{margin-top: 30px;}
